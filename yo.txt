@@ -1,0 +1,789 @@
+
+Available Courses:
+
+1. Sustainability Measures for SMEs
+2. Exploring Society & Social Structure
+3. Entrepreneurial Hypothesis Testing
+4. Introduction to Strategic Management
+5. [Retake] Spreadsheets for Business Decisions
+6. Spreadsheets for Business Decisions
+7. Understanding Indian Culture: Theatre and its Presence in Daily Life
+8. Exploring Sustainability in the Indian Context
+9. Social Media for Marketing
+10. Design Your Thinking
+11. Entrepreneurial Mindset and Methods
+12. Management Accounting
+
+Enter course number: 2
+✅ Course opened!
+
+📦 Available Modules:
+
+1. Module 0: Welcome to the Course
+2. Module 1: Introduction and Pre-cursors - Human in Society
+3. Module 2: In Search of a Universal Theory
+4. Module 3: In search of a Universal Theory - Contemporary
+5. Module 4: Reproduction of Power in Society
+
+Select module: 3
+
+📚 Available Lectures (CLEAN):
+
+1. 2.1 Economic and Philosophic Manuscripts of 1844
+2. 2.2 Manifesto of the Communist Party, 1848
+3. 2.3 The Downfall of Capitalism
+4. 2.4 Aims of Communism
+5. 2.5 Ehrenreich's Ideologies
+6. 2.6 Max Weber Ideologies
+7. 2.7 Capitalism
+8. 2.8 The Degeneration of Ethic
+9. 2.9 Handout for Module 2
+10. 2.10 Learning Interludes
+11. 2.11 Discussion Forum
+12. 2.12 Continuous Learning Assessment - Instructions
+13. 2.13 Continuous Learning Assessment - 2 (15 Questions)
+
+🚀 Processing Lecture 1: 2.1 Economic and Philosophic Manuscripts of 1844
+Traceback (most recent call last):
+  File "C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent\lms_bot.py", line 310, in <module>
+    run()
+    ~~~^^
+  File "C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent\lms_bot.py", line 137, in run
+    lecture_links.nth(original_index).click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 15631, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(".collapsible-trigger").nth(2).locator("xpath=ancestor::li").locator(".collapsible-body li a").first
+    - locator resolved to <a href="/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@42a30f531ff643e4b894d137d4b36872">2.1 Economic and Philosophic Manuscripts of 1844</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="pgn_collapsible mb-2 collapsible-card-lg">…</div> intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div tabindex="0" role="button" aria-expanded="false" class="collapsible-trigger">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="pgn_collapsible mb-2 collapsible-card-lg">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> py lms_bot.py
+Login manually, then press ENTER...
+Press Enter after page loads...
+
+Available Courses:
+
+1. Sustainability Measures for SMEs
+2. Exploring Society & Social Structure
+3. Entrepreneurial Hypothesis Testing
+4. Introduction to Strategic Management
+5. [Retake] Spreadsheets for Business Decisions
+6. Spreadsheets for Business Decisions
+7. Understanding Indian Culture: Theatre and its Presence in Daily Life
+8. Exploring Sustainability in the Indian Context
+9. Social Media for Marketing
+10. Design Your Thinking
+11. Entrepreneurial Mindset and Methods
+12. Management Accounting
+
+Enter course number: 2
+✅ Course opened!
+
+📦 Available Modules:
+
+1. Module 0: Welcome to the Course
+2. Module 1: Introduction and Pre-cursors - Human in Society
+3. Module 2: In Search of a Universal Theory
+4. Module 3: In search of a Universal Theory - Contemporary
+5. Module 4: Reproduction of Power in Society
+
+Select module: 3
+
+📚 Available Lectures (CLEAN):
+
+1. 2.1 Economic and Philosophic Manuscripts of 1844
+2. 2.2 Manifesto of the Communist Party, 1848
+3. 2.3 The Downfall of Capitalism
+4. 2.4 Aims of Communism
+5. 2.5 Ehrenreich's Ideologies
+6. 2.6 Max Weber Ideologies
+7. 2.7 Capitalism
+8. 2.8 The Degeneration of Ethic
+9. 2.9 Handout for Module 2
+10. 2.10 Learning Interludes
+11. 2.11 Discussion Forum
+12. 2.12 Continuous Learning Assessment - Instructions
+13. 2.13 Continuous Learning Assessment - 2 (15 Questions)
+
+🚀 Processing Lecture 1: 2.1 Economic and Philosophic Manuscripts of 1844
+🧪 Trying to click index: 0
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@42a30f531ff643e4b894d137d4b36872/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@3cc551d2f4fa47a48d576d736c51f6e9
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 59
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+Today we start with our second module starting with Marx, and then we will go on to Durkheim in this module. So for Marx?s, we'll study two excerpts from two of his major works. So first we will start with the economic and philosophical manuscripts of 1844. So Marx was considered the father of communism. He, in his time though, he was considered a political economist and a journalist and activist. So Marx has left a very important legacy. And today he is known for his impact in terms of the communist revolution that took place. However, his work as a political economist, as a sociologist that is what we'll focus on today. Because while we might disagree with his ideologies regarding communism, that is not what we are concerned with. We are concerned with understanding society and social structure. We are concerned with understanding specifically how as entrepreneurs an understanding of society and social structure will help us. So it is from that perspective that we will approach Marx. So we'll understand him not from an ideological point of view. We'll understand him as a theoretician in helping us to see how, which of his ideas are still relevant for us to understand society and social structure. So with that background in mind, let's first look a little bit about Karl Marxist early life. So he was born in Prussia. Today, there's nothing called Prussia. So Prussia at that time is basically present day Germany. He was born to Lutheran parents. Now keep in mind that he actually, his father was a, a Jew but he converted from Judaism to become a Lutheran to evade the antisemitism. So at that time, there was very strong antisemitism. So to evade that his family actually converted. Now Marx, he studied law at his father's request at Bonn University in Germany. Although his own interest was much more in philosophy and literature now at the University of Berlin where he soon, he, his basic instincts came to the fore and he felt very much at home when he joined a circle of at the time they were considered quite extreme thinkers who were challenging existing institutions and ideas. They were challenging religion, they were challenging philosophy, they were challenging ethics, politics, the economic system. It was a time of intellectual ferment. So Karl Marx found himself very much at home with these people. And you'll see a similar pattern in the works of Hobbes, of Adam Smith, of Rousseau sort of this questioning of the existing institutions including religion, ethics, politics, and economics and the same kind of trend we see in Marx's work. So among the many intellectuals that he came across, he was especially influenced by the work of Hegel who talked about how history progresses through dialectics. So there are two contradictory ideas, and the dialectic between these contradictory ideas leads to some kind of progress. So you'll see the same thing in Marx's work especially when in the next subsection where we discuss Marxist manifesto. So we will come back to this idea of dialectics and how different contradictory forces can lead to historical progression. Now after school, Marx's turn to writing and journalism to support himself, and he became the editor of a liberal newspaper where he expressed his intellectual dissent, and he published articles which were questioning the existing institutions. And so the Berlin government actually banned from publication. And so Marx given that he now no longer had a way to earn a living, he left Germany and he never returned and he moved to Paris and this is where he met his long time collaborator, Friedrich Engels. Now, Friedrich Engels story is also very interesting and we will see this a little bit more when we discuss the manifesto. Friedrich Engels was the son of a factory owner. So he was what Marx would call a capitalist. But Engels was Marx's biggest supporter throughout his life and in fact financially also, if it wasn't for Engels, Marx would probably never have been able to publish his work. So we can see the irony of that. Now, so he was living in France but he got chased out of France too. Because of the people in power opposed his ideas. And so Marx moved to Brussels and then London. So he really led this life of poverty life on the run where he was pursued and persecuted by various governments. While Engels became his lifelong friend and supported him financially throughout his journey while he was trying to write his book. And so he spent most of his life working on his manuscript thus capital which, and we will see excerpt from that in the next subsection. What about Marxist impact? So several revolutions occurred propelled by groups that adopted his ideas on communism. So including in Russia, in China, and flags and banners in China, in Russia for instance, depicted Vladimir Lenin, the leader of the Russian Revolution together with Marx. Similarly the case was in China where similar flags showing the leader of that country's revolution Mao Zedong together with Marx these were prominently displayed. So Marx, although he was basically a scholar, a writer, a journalist, his ideas really instigated several revolutions and changed perhaps the course of human history. Now to, before we get into Marx's ideas you know, let's think a little bit about the context. You know, last module we ended with Adam Smith and Adam Smith is talking just when the industrial revolution is starting you know, where the factory system is coming into play where you are dividing labor into little, little bits so that instead of producing whatever 100 nails, suddenly you are producing 10,000 nails, right. And so in Adam Smith's work, we see the excitement, the promise of this revolution that is happening. And Smith is talking about how division of labor industrialization will transform society, will make us prosperous, will make us all wealthy. And now we see Marx with a very, very different view. But keep in mind that Marx is about a 100 years after Smith. So while Smith was in the beginning of the industrial revolution and he was looking at this whole thing with so much of hope for human prosperity and human advancement, Marx has now seen after a 100 years what actually happened and that excitement of industrialization has faded, and now the consequences have become clear and Marx sees that it is not universal wealth as Smith imagined and hoped for but actually what was seen is extreme inequality and a quality of life, which one could argue, and that is what Marx argues that a quality of life for the worker, which is actually lower than what it was before. So this is what, this is the context in which Marx is talking. So without understanding that context then, you know, it is very difficult to understand how Smith and Marx are looking at actually the same thing. Division of labor industrialization but coming to dramatically different conclusions. So keeping that context in mind, let's now jump into the economic and philosophical manuscripts. So the economic and philosophical manuscripts are perhaps less well known than thus capital but without understanding economic and philosophical manuscripts, one can't actually understand thus capital because this is the foundational work which leads to the manifesto. Which we will read next. So now before we start to quickly summarize, what is Marx saying in the economic and philosophical manuscript? Marx is basically starting with a description of the condition of the worker in the modern capitalist system. So he makes this very eloquent case. And if you have a chance to read the whole excerpt, please do Marx writes you know, very beautiful language actually. And we will see some of those quotations we will see today in our own class. So Marx describes the worker being reduced to a commodity, just like we have salt and pepper, and there's no differentiation between one salt packet and another salt packet. Just like that he talks about how the worker is also a commodity with no differentiation between them. And not just that the worker is reduced to a mindless commodity but the worker is the poorest of all. As society's wealth grows, the worker's misery also grows. And this inequality becomes worse and worse, and society splits into two classes. You know, you don't have all those distinctions, which we had before of guild workers of merchant class none of those. Everything just splits into two classes, property owners and propertyless workers. So this is essentially the case that Marx is making in the economic and philosophical manuscripts. So I'll start with a quotation from Marx. Marx says "The worker sings to the level of a commodity and becomes indeed the most wretched of commodities that the wretchedness of the worker is an inverse proportion to the power and magnitude of his production that The necessary result of competition is the accumulation of capital in a few hands, and thus the restoration of monopoly in a more terrible form and that finally the distinction between capitalists and land rentier like that between the tiller of the soil and the factory worker disappears, and that the whole of society must fall apart into the two classes, the property owners and the propertyless workers". So that's end quote. So starting with that quote Marx then basically provides a critique of a political economy as a discipline. So what he says is that political economy assumes private property. It assumes private property as a fact which cannot be changed. So it doesn't try to explain private property, he just assumes it as a taken for granted fact. And so it explains wages, profit, rent but it ignores where all this is coming from. So it takes the interest of the capitalist, the property owner as the ultimate cause or objective. So according to Marx, the biggest criticism of political economy is that it takes for granted what it's supposed to explain. So Marx ends with his critique by saying that the only wields which political economy sets in motion are greed and the war amongst the greedy which is competition. So political economy according to Marx fails to explain the necessary inevitable and natural historical evolution from slavery to the feudal system, to the guild system, to a taxable third estate under monarchy to the modern capitalist system. So all of these are distinct economic, political systems that human history has gone through. Slavery, feudal system, guild system, taxable third estate under monarchy modern capitalist system. So Marxist critique is not just that political economy takes for granted what it is supposed to explain. It also doesn't explain why is it that this progression happened. So according to Marx, economists treat history as accidental or intentional change. But they do not see these as necessary outcomes of historical processes that are inevitable. Now, Marx says that we must grasp the intrinsic links between private property and avarice, the separation of labor, capital, landed property, the connection of change and competition of value, and the devaluation of men of monopoly and competition. We have to grasp this whole estrangement connected with the money system without which we cannot really understand what is happening. So Marx goes on to say how economists invents the invent, these fictional origins where they say barterly leads to exchange which leads to money and prosperity. So he criticizes them saying that they're like theologians explaining evil by the fall of man, you might have heard of Marx here is referring to Adam and Eve and you know, the eating of the apple and the fall of humans which is what led to the original sin and evil. So he's drawing an analogy between the political economists and the theologian. So he's criticizing both of them and saying that both are instead of explaining what they're supposed to explain, they assume it a way by some fictional fact. Yeah, so in the case of theologians, he is criticizing them by saying that instead of explaining evil which is what you're supposed to do. You're just inventing the story of the fall of man, of human to, to explain evil. So Marxist criticism is that such stories assume what they should explain. So Marx says this is, we cannot start with these kind of fictional stories. You cannot explain reality with fictional stories. We should start from real economic facts, not myths.
+
+💾 Saved as: 21_Economic_and_Philosophic_Manuscripts_of_1844.txt
+
+🚀 Processing Lecture 2: 2.2 Manifesto of the Communist Party, 1848
+🧪 Trying to click index: 1
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@a9e1ea62ebd14777bba52e695ec2d899/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@31ad82034b1141b9ac2c2206cae3f2c6
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 56
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+In the last subsection on Marx, we discussed the economic and political manuscripts. So today we'll continue with Marx and discuss the manifesto of the Communist Party. This was written by Marx and Engels. So Marx, we've already looked a little bit in the last subsection about Marx's history his biography. So today we've, and we discussed how Marx, Marx's ideas have had a profound and lasting impact on world history. There are many big revolutions that change the course of our history which have been at attributed to Marxist's ideas. So from that perspective, it's very important to understand Marx. Whether you agree with Marx or not his ideology that's a different subject. And maybe you will have lots of heated discussions in the chat or with your friends about whether Marx was right, about communism or not. And those are interesting debates and discussions to have. But our purpose in this course is to focus on Marx and how his ideas are not only, you know, had an impact on the world but also continue to influence academics. So Marx's ideas continue to influence sociology, economics, political science. And there are several core concepts that Marx proposes in his manifesto which are very interesting for us because they help us understand social structure and social change. So that is what we'll focus on, even though I am sure you have very strong views on whether Marx was right about communism and what has happened post Marxist ideas. I think many people would argue that, well, Marx was clearly wrong because communism failed. And I hope you have these discussions with your friends, with your family in the, in the chat of the course. But what we'll focus on is Marxist concepts which help us to understand social change and social structure. But before we do that let's look a little bit at Engels who was his co-author on the manifesto? Engels is a very interesting person because he was the owner of a textile factory. So he inherited this from his father. And you know, in his early days he showed some skill in writing poetry but his father of course, insisted that he has to join the family business. And so Engels spent many years acquiring pr practical business experiences before he himself took over the running of the business. So Marx at you know, very early, he began to show this capacity for living almost a double life. So during regular hours, he operated very effectively as a business person but then in private and in the evenings he developed and he allowed and a growing interest in liberal and very revolutionary works. In fact, Engels was responsible for supporting Marx financially for a good part of Marx's life. So he was a co-author and one could argue that really none of this would've happened without Engel's financial support. So it's really an irony that a capitalist is the one who provided Marx with the capital to be able to write the manifesto. So that's the biography. Now, let's also look at the historical context in which the manifesto was written. So the manifesto was published in 1848. Now, this was a period of widespread descent and revolutions across Europe, and there were many attempts by different European powers by the church, by the pope to suppress these revolutions and these ideas because they were seen as being very dangerous. So it is in this context that the manifesto is written. So all of these revolutionary ideas, this descent is already happening. And Marx says that s sceptic of communism is beginning to haunt Europe. And he says that the powers of old Europe have formed an alliance to fight against this rising threat of communism. So the purpose Marx had in writing this manifesto was you know, let us not be secretive about this. We should have a very transparent public declaration which is also meant to counter many of the arguments and many of the misinformation according to him about communism. So the purpose to have a document with the party's actual views, aims, and tendencies, it was a call for transparency and an assertion of communism as a recognized political power in its own right. So this was the context in which the manifesto has been written. Now coming back to our purpose in this course, we are social theorists in this course. Our job in this course is to understand social structure so that we can also understand how valuable social structure is. Because ultimately as as entrepreneurs, we really have to be able to find those gaps and find opportunities, and you can do that when you see how fragile social structure is. So that's a point we will keep coming back to throughout this course. So Marx helps us in this process by contributing two concepts. One is historical materialism and the other is base and superstructure. So the idea of historical materialism let me just very quickly explain what historical materialism means, and then we will look at it in much more detail as we go through the course. So historical materialism asserts it's, it theorizes that history evolves through changes in the mode of production. So what is the mode of production? The way, the instruments of production and the relations of production. So what are the instruments available for us to produce and to work, and what are the relations between people who are working? So historical materialism basically theorizes and asserts, so this is Marxist's assertion that history evolves through changes in these modes of production, which lead to conflict. When there is a change in the mode of production, it leads to conflicts between the different relations of production, the different people doing the work. So according to Marx, these are basically class struggles. And these class struggles are what drive historical change. So Marx asserts that society the reason society has changed from ancient society where you had the aristocracy, slaves, knights, and common people to the middle ages where you had these feudal lords and guild masters, artisans, traders, journeymen, different type, different people had different roles in society. The feudal lords were the aristocrats and you had these guild masters who were the artisans, and then you had the trader class, right. And then you had the serfs. So from the ancient society to the feudal society, and now to the more modern bourgeoisie society where all classes have collapsed into just two, the capitalist and the labourer, the bourgeoisie and the proletariat. So Marxist historical materialism gives us one explanation for how did this change happen. I mean, clearly it's not one human being who decided okay, society needs to change. So then how did this massive social change happen? So historical materialism is one explanation for that, why that has happened. And it helps us because it helps us to understand what might be coming. So just to give you an example all of us are in the midst of this transformation based on machine learning AI, robotics. How is society going to look because of these changes in the instruments of production. So Marxist ideas can help us to think through what, how this social change can happen. Okay, so this is our purpose in this course in this subsection on Marx to understand historical materialism and as part of historical materialism, there is a sub concept called base and superstructure. Where Marx argues that the material, the economic conditions of life which is the mode of production, the instruments of production, and the relations between the people who are producing. These economic conditions of life, they are the base, the foundation. Now, when this changes, then everything else also changes. Because everything else is just a super structure on top of the foundation. And so what is this everything else? Religion, art, culture, literature, law, value systems, morals, political system, all of this. So according to Marx, the economic relations, the modes of production, the instruments that we have and the relations of productions. This is the foundation. Everything else is like an icing on the cake. So these are the two things that we will be discussing and this is what you should understand at the end of the subsection on Marx's, historical materialism and base and superstructure. Now why is this relevant to us? First of all, when we look historically in India, we saw a similar change. We had kings and then we have, we had different cast, some who are involved in trade, some who are involved in you know, being the rulers and some who are involved in doing the fighting and the wars, and some who do labourer jobs, and some who do scholarly jobs. And now we are very much a society which values independence, which values meritocracy, education, working. So there has been a huge change in all of society, including in India. So there are many ways to understand why this change happened, and as we go along, I'm hoping that you'll look at Marxist's ideas from the lens of what we ourselves in India. So of course, in the whole world, this change has happened, including in India. So I want you to as we discuss Marx, think about how this applies to what has happened in our own society. And we'll of course look at this kind of social structure and social change from many different perspectives. Marx is just one theory, right. There are multiple other theories, and we will look at those other theories so that we have multiple ways of looking at social structure and social change. So to that end, let us first start by understanding Marxist ideas. So Marx starts by making a claim that the history of all society is the history of class struggles. Society changed from ancient society where there is a aristocracy, slaves. knights, plebeians to middle ages where you have feudal lords, vassals, guild masters, tradespeople, apprentices, serfs and then finally to the modern bourgeoisie society. Where Marx claims that all classes have collapsed into just two, the capitalist and the liberal, the bourgeoisie and the proletariat. Let's look again, these are terms which will keep coming up throughout the subsection on Marx, so let's just be clear what these terms are. Bourgeoisie. What does bourgeoisie mean? Bourgeoisie is basically a class of modern capitalists. Anyone who owns the means of production and employs somebody to do, to use the means of production to work. So anyone who has capital to invest for productive activity is a bourgeoisie who is a proletariat. This is the class of modern wage labourers wage who basically sell their labour to survive. So if I don't work, then I don't eat. So I am a wage labourer. So a proletariat is anyone who sells their labour to survive. What Marx is saying is that the modern bourgeoisie society that is the modern capitalist society has sprouted from the ruins of feudal society, has not done away with class antagonisms. It has but established new classes, new conditions of oppression, new forms of struggle in place of old ones. So here Marx is really questioning this idea that you know, this is a sort of an enlightenment idea that oh, we are now all equal. Before we used to have monarchs and everybody else was somehow a lesser human being. And we are a aristocracy where, you know given by God to rule over all of us. We don't have any of that anymore. Now we are all equal. So Marx is really questioning that and saying that, well, it's just a new form of oppression. It is not that we have done away with, you know the class antagonisms that existed before. Before it was feudal lords and monarchs and serfs. Now we have a new one which is capitalist and proletariat. So how does this happen? So basically Marx is saying that the serfs of the middle ages. So these are, you know, those the feudal lords, the aristocracy at the time, the belief was that the monarch and the aristocracy, God has somehow given them a right, right. So to rule. So all land belongs to them. And now, you know, these serfs can farm some small pieces of their own land but then they owe some taxes to the aristocracy and the monarchy because the aristocracy is giving them the right to farm on that land. So Marx is describing how that system gave rise to what is called chartered burgers.
+
+💾 Saved as: 22_Manifesto_of_the_Communist_Party,_1848.txt
+
+🚀 Processing Lecture 3: 2.3 The Downfall of Capitalism
+🧪 Trying to click index: 2
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@d0f51c7048f245e69d20b7c487471c0b/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@bada0d1194ec4fdbbe7cec4683a3197a
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 59
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So in the previous subsection we looked at Marx's ideas of historical materialism and base and superstructure where he explains how capitalism came about. Now in this next subsection, we will discuss his Marx's ideas about how he thinks that these forces that have been unleashed by capitalism will lead to its own downfall, and Marx believes that the next stage will be communism. Of course, we know that communism really failed but this is Marx making the claim that communism will succeed. So how is it, why is Marx saying that now, you know, from feudal we went to the Bourgeoisie society and now he's saying that now from this bourgeoisie society, inevitably we will have communism. Why is he saying that? He is saying that modern bourgeoisie society is like a saucer who is no longer able to control the powers of the netherworld whom he has called up by his spells. So Marx is saying that these forces have been unleashed and now capitalism can no longer control these forces and those same forces will destroy capitalism. So, how is it that this destruction will come about? One, according to Marx, it's because of these economic crisis. So there are periodically economies go through these cycles and there are these crisis happen when there is this epidemic of overproduction, which threatens the entire bourgeoisie society. So too much overproduction, there is not enough demand, markets are shrinking, and then everything starts to shrink and the economy basically goes into a downturn. Marx says, how do bourgeoisie overcome these crisis? Through several ways. They enforce destruction of productive forces so they actually go and destroy products or the conquest of new markets, or the more thorough exploitation of old ones. Now in addition, so these crisis are one way in which, according to Marx, capitalism is creating its own end. The other even more important way, according to Marx, is that the bourgeoisie, the capitalism has given rise to this class called the proletariat, and the proletariat will now destroy the capitalist system. So he says that the weapons used to overthrow feudalism will now be turned against the bourgeoisie itself. But not only has the bourgeoisie forced the weapons that bring debt to itself, it has also called into existence, the men are to wield those weapons, the modern working class, the proletariats. So according to Marx, the bourgeoisie has created its own grave diggers that's what he calls them, grave diggers, who are the proletarians. Now, how does this happen? This is what Marx explains, in proportion as the bourgeoisie that is capital is developed in the same proportion is the proletariat, the modern working class developed. So who are the modern proletariat? A class of laborers who live only as long as they find work and who find work only as long as their labor increases capital. These laborers must sell themselves piecemeal. They're like a commodity, like every other article of commerce, and are consequently exposed to all the vicissitudes of competition, to all the fluctuations of the market. So the proletariats have become a commodity subject to the fluctuations of the market. And now due to machinery and division of labor, their work has lost all charm. They become an appendage of the system, and it is only the most simple, most monotonous, most easily acquired knack that is required of him. This is another quote from Marx. So, the cost of production of a workman is reduced to the bare minimum needs for subsistence. So that's the wage paid, is the bare minimum that you need to survive. The working class is recruited from all the classes of the population, including the previous lower middle class, the small shopkeeper, the small owner, all of these cannot compete with the large industrialists. They just don't have the capital. And so they all become the proletariat, the working class, and as their situation becomes worse and worse. The proletariat starts struggling. They start with individual uncoordinated attacks. They go and attack machinery or they foreign imports which are competing with local products. They go and set fire to them, or they set fire to factories because they are so angry with the capitalists. And so this is, you know, here and there you have these kind of, these uncoordinated attacks. Now if any kind of organization happens, it's actually because of the bourgeoisie who initially seek the help of the proletariat the help of the workers, first in the struggle against the aristocracy, then against the small bourgeoisie, then with the bourgeoisie of foreign countries. And so the bourgeoisie actually help in sort of politicizing these workers. But as the industry develops, the proletariat not only increases in number, it also becomes more concentrated. And as the conditions of life of the proletariat become more and more become worse and worse the conditions also become more similar, so whichever country you go to, wage laborers are having the same struggles, and so the introduction of the machinery destroys these distinction be between the workers. Because now they're all like commodities, there's no, you know, I am a very specialized worker in this sort of specialized worker in this, so they're all somewhat similar and replaceable. And so their wage is also similarly low. And as this capitalism keeps progressing, the lives of the worker become more and more precarious with economic crisis leading to fluctuations. So all of this leads to workers forming trade unions. First, it is for specific demands like keeping a constant wage for more safe working conditions. But later, as the similarity becomes more and more with other trade unions across the world, they become more permanent organizing bodies. So with the growing concentration and size of workers and the improving methods of communication, the Union of Workers grows from uncoordinated local groups to more and more regional and then national, and then pan national groups. And so the whole world takes on the character of a collision between just two classes, the Proletariat and the Bourg Joie. And so, you know, what about these other classes? These small traders? Small owners, landowners? So according to Marx, they all will just collapse into the proletariat and because to Marx, the proletariat is the only really revolutionary class. Other classes such as the small manufacturer, the small shopkeeper, the artisan, the farmer they might fight against the bourgeoisie here and there to protect themselves from extinction, but they're not really revolutionary. They don't want a new system. They just want to roll back the wheels of history and go back to the previous system. So the proletariat, according to Marx, has nothing left. They are just living by working day to day, and so they have nothing to lose. Their mission is to destroy all previous securities for and insurances of individual property, so that according to Marx is the objective. So Marx explains all previous historical movements where movements of minorities or in the interest of minorities. The proletariat movement is an independent self-conscious movement of the immense majority in the interest of the immense majority. The proletariat, the lowest stratum of our present society cannot stir, cannot raise itself up without the whole super incumbent strata of official society being sprung into the air and go . So this is why every form of society has been based on some form of oppression, but the oppressed were at least offered the right to continue to exist, and they had some hope of improvement. So the farmer could raise himself up to be in one of those free communes. But in modern industry, according to Marx situation of the workers just becoming worse and worse, there's no chance of improvement. And so how can you have a system how can you let the bourgeoisie rule they're unfit according to Marx to be the ruling class because they cannot guarantee an existence for their own slave, for their own oppressed class. The I irony according to Marx is that capital is, which is essential for modern industry, is based on labor capital, according to Marx, is accumulated labor. It's the surplus from accumulated labor. And who is it, that was producing who's producing this labor? The workers, the proletariat. Why is wage labor so low? Because of competition between workers. But what is modern industry doing? It is bringing workers together and so modern industry produces its own grave diggers. So according to Marx, the fall of modern industry and the victory of the proletariat is inevitable. So all of these ideas about communism as an ideology is interesting. And, you know, we can have dinner table conversations and debates about it. As social theorists, what we need to take away is the idea that what are the economic relations, what are the different classes that we have in any society and are the classes structured such that everybody is getting a sense of hope that there is improvement. Everybody is doing well, because if not, then at some point people will aggregate and there will be some kind of revolutionary change.
+
+💾 Saved as: 23_The_Downfall_of_Capitalism.txt
+
+🚀 Processing Lecture 4: 2.4 Aims of Communism
+🧪 Trying to click index: 3
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@6b8c7e1c24c5441ab6fb15c9b6e643c4/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@4d13fe72b0eb435a84870f0d1dec7979
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 57
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So in the previous subsection we looked at Marx's ideas of how capitalism is going to be destroyed and why he thinks that. And for us as social theorist, the takeaways from that is this idea of how the different modes of production, how they can change society. The other takeaway for us from these subsections is to look at what are the different classes of society and are we ensuring as a society that each of the classes have a way of improving themselves and there is a sort of a fairness to it because otherwise there is this revolutionary aspect which Marx talks about. Now in this last subsection we will continue with Marx, who discusses well what, what does Marx mean by communism? And it's interesting for us to see, because many of the things that he says are communism, actually, most countries have that today. And especially if you look at the Western European countries if you go through the list of points that Marx makes most of them you know we all consider to be things that society should have. So let's look at what Marx actually says. So what are the aims of the communist? According to Marx, in the national struggles of the proletariats of different countries, communists point out and bring to the front the common interests of the entire proletariat, independent of every nationality. So that's the aim of communists, according to Marx. To forget about all these national I am you know, German, I am whatever, Chinese but to say proletariats, you are all proletariats. You are all fighting a common enemy. So the immediate aim is a formation of the proletariat into a class and then Marx says, and this is the ideolog in Marx he says that, 'After that the aim is to overthrow bourgeoisie supremacy and the conquest of political power by the proletariat'. So, how do you come up with this? How do you do this? You have to abolish all private property. But specifically what Marx is saying is that you have to abolish bourgeoisie private property. Because according to Marx, capital is just surplus accumulated labor, so it should not belong to a few capitalists. So that is what he wants to abolish. So the aim of communism is to do away with the miserable character of appropriation where laborers live only to increase capital. Instead, the aim of communism is to ensure that accumulated labor that is capital must be a means to widen, to enrich, to promote the existence of the laborer. So instead of laborers living to increase capital, capital should be a means to widen, enrich, and promote the existence of the labourer. So then he spends a lot of time sort of answering the objections of these imaginary bourgeoisie whom he's arguing with. So he one of the objections is how can you abolish private property? So Marx's response is, well, already 9/10th of the population has no private property. They don't have capital. They're living day to day. They work, they earn, they eat. If they don't work, they don't eat. So all communism is doing is that it deprives any one of the right to subjugate that labor of others in the form of capital. So another objection is losing freedom, but Marx says, but what is freedom to buy and sell? Well, only the bourgeoisie who have appropriated capital and hence have capital who have appropriated labour and hence have capital. They're the only ones who have this freedom currently. Another objection, we lose our culture. But Marx says, well, the current culture law are all for the benefit of the bourgeoisie. The culture has to be changed because it has to be for the benefit of everyone. On laziness, so another objection is that if private property is abolished and all motivation to work will disappear and society will degenerate into laziness if this way, so then society should have gone to the dogs long time back. Because according to Marx, the bourgeoisie, the capitalists are people who do nothing but get. So those of its members who work acquire nothing, and those who acquire anything do not work, that's a quote from Marx. Another objection on nationality. The communists will come and remove all national nationality. Everybody will be just, you know, the same, it'll be like a one world. So Marx says well, bourgeoisie development is already causing these national divisions to just be less, less and less important because everybody is becoming more and more similar. All that the proprietary victory will do, will, is that it'll accelerate this process on the family. So the objection is that well the family structure will be destroyed. But Marx says, well, the proletariats children are even now working because they have to work for the family to survive. Now, all that communism will do is to stop the exploitation of children. On education, another concern is that now you'll have social education. Everybody will have to have the same education. And now that, that will mean that a parents values will not be passed on to the children. Then Marx says, but today also, the value system that we have is based on the economic conditions, and that has to change, and that is why social education is anyway happening. So Marx says, man's ideas, views, and conceptions in one word, man's consciousness changes with every change in the conditions of his material existence, in his social relations, and in his social life. So the ruling ideas of each age have ever been the ideas of its ruling class. So, you know, now, you know, Marx, we have known Marx for a long time. So even at the dinner table, we might discuss these and say that, oh, history is written by the ruling class. The some of these are coming from Marx's work. And so before going through this clip, I hope you have done your homework and watched. The 2 videos one is off from the Gladiator, the movie Gladiator. And if you haven't seen the movie, it's about this you know, this warrior who has this speech where he basically, he is showing his loyalty to the rightful king and he's willing to give up his life, who he's willing to do anything to play out. That, those ideas of loyalty and serving the rightful king, that's sort of the medieval idea. Those were the medieval value systems. There's another clip which hopefully you have watched, which is of God in Gecko, where he makes this strong speech about how greed is good. So that is the capitalist value system, meritocracy, self-interest. There's no nobility, we don't have an aristocracy anymore. It's all about self-interest. It's all about merit. And so these 2 clips are meant to kind of give you a sense of how Marx explains to us this idea of base and superstructure as the modes of production change, the ideas and the value systems law, everything changes. So the what is the outcome according to Marx? What will communism bring? It is 10 key measures and you know, if you have time go through the original manifesto, but basically he's talking about a very heavy progressive income tax, the abolishment of inheritance or an inheritance tax. Free public education, abolishing of child labor, abolishing of the distinction between town and country, centralization of credit, transportation and factories in the hands of the state via nationalized banks and industries, and an equitable distribution of the population across the land. So key concepts that I want you to take away from this subsection on Marx. One is the idea of base and superstructure. Base is the economic foundation of society. So modes of production, instruments of production. Superstructure is everything built on top of that base, and that includes everything from education, value systems, literature, art, law, political system, all of that. And then the idea of historical materialism which is this idea of how we went from primitive society to slave society, to feudalism, to capitalism. And according to Marx, we will finally end with communism, which is an ideal society. But forgetting about that bit, what I want you to take away is this idea of historical materialism where history evolves because there is a change in the material conditions, the economic conditions, the modes of production. So those are the 2 key concepts that I want you to take away with you based in superstructure, historical materialism. And now I want you to apply these concepts to our own lives. So to do that, I have 2 exercises for you. One is I want you to look at our own history, Indian history. The transition, globalization, going from colonialism to an independent country, rural to urban value systems. I want you to think about any of these changes. There are so many, such changes. I want you to think about any of these changes and reflect on how Marx's concepts, historical materialism, and base in superstructure can be used to explain that change. Any social change is complex and can be understood from multiple perspectives. And in this course we'll look at multiple perspectives. Marx is only one among the many perspectives that we will look at, but as part of the access the session on Marx, I want you to apply Marx's ideas to any of these historical changes that we ourselves have seen in our country and analyze it from that perspective. So that's one. Second, I want you to look at the future. It seems clear that AI, robotics, all of this will completely change the mode of production. I want you to think about how this might change the relations of society. Might it lead to even greater concentration of capital where the middle class totally disappears and you just have two extremes, very poor and very rich because the capital needed now is even bigger or maybe there's some other change. Maybe it equalizes the world. Maybe it means that each of us work only 2 hours a day or only 2 days a week, and we spend the rest of our time on improving ourselves. Hobbies, leisure activities, spending time with family, focusing on our health and wellbeing. Maybe that's the change. I want you to think about how this change in the material conditions of production might change things like art, literature, politics, value systems. So with that, I will end the section on Marx and I hope you will do these 2 exercises that you have been given to look at the past and also to look at the future.
+
+💾 Saved as: 24_Aims_of_Communism.txt
+
+🚀 Processing Lecture 5: 2.5 Ehrenreich's Ideologies
+🧪 Trying to click index: 4
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@cb033d1db0974cad82298c57de277ce8/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@e5c43f9bae8e436897f35d5da6835408
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 57
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So today in this module, we will now take forward Marx's ideas and look at a contemporary application of Marx's ideas. This will help us to understand how these ideas are being used today. And it'll give you examples of concepts like base and superstructure, the different forms of alienation, surplus and class struggles. So with this purpose in mind today, we are going to look at this work by Barbara Ehrenreich called Nickel and Dimed. This was written in 2001, so this is a contemporary piece. Now very briefly, who was Barbara Ehrenreich. She is a contemporary of ours. She passed away in 2022. She was born in 1941 in a blue-collar mining town. Her father was a copper miner who later became a senior executive at the Gillette Corporation. So you can see that, you know, biography, going back to Mill's Ideas. Her biography, her background in a blue-collar mining town with her father as a blue-collar worker. That definitely has had an influence on the later work that she has done. So this goes back to Mills' ideas of how biography impacts history. She attended Reed College, majoring in physics, chemistry and then went on to get a PhD in cellular immunology. So this is very different from the final work that she ended up doing. And how did this shift happen? After the birth of her first child, she underwent a really big personal and professional transformation because of her experiences giving birth she became very involved in the women's health movement and then also the issues of labor and Labor movement. She's best known for this book, and you have all, it's a required reading. You've read an excerpt from this book called Nickel and Dimed and this book, it's her most famous work. And it was written in this context where in the US at the time in the 1990s, there was this big debate going on and it was based on sort of this, contrasting view of work. So the belief was that there, there were too many unemployed people and there were too many unemployment and other benefits being given to these people and because you had so many benefits, people didn't want to work. They were becoming lazier and lazier. So the idea was that these poor people who the government was giving benefits too. They could have easily escaped poverty if they simply chose to work and they were not choosing to work because of all these benefits, and that's why now society was having to support them. So her goal was to determine if this is actually true. If a full-time, low wage job in America could actually cover the basic cost of living rent, food, healthcare, so that was her objective in this work. Now, for this work, she was doing this kind of social experiment and she imposed on herself 3 rules. The first was that she had to take the highest paying job that she could find in the local area. The second is she had to take any job offered without relying on any of her prior professional contacts or any of her prior skills. Now remember, she had a PhD, but she is now applying for labor intensive, low skilled jobs, and she had to use her actual earnings from these jobs for all her expenses, housing, food, transport, everything. She could not use credit cards or she could not rely on her own personal previous savings. So this was the experiment that she had decided to do. Now, what was the core question? The core question was, can a person survive and maintain basic human dignity, working full-time at minimum or low wage jobs in America? Now, remember, America is supposed to be one of the richest countries in the world. So the question is if you work full-time in America at a minimum or low wage job, can you maintain basic human dignity and can you maintain yourself and survive? That's the question. Now you've all read the paper. So what I would like to do in this section and video is I would like to discuss how Ehrenreich work helps us to understand Marxist's ideas. And specifically, which ideas will this work allow us to understand? One is the idea of surplus value and class war. Second is the different forms of alienation. The third is the idea of base and superstructure. Finally, the idea of societal instability and possibly revolution. So these are the four ideas that we'll use  Ehrenreich's work to understand these ideas better. So first concept, surplus value, and 2 classes. So in Ehrenreich's work, we see the application of this idea of surplus value, class wars and minimum living wage. So what is surplus value? The difference between the value a worker creates and the wage they receive is called surplus value according to Marx. And this surplus value, according to Marx, is the source of the capitalist profit. So in Ehrenreich's case, she's getting $2.43 dollars per hour. So this is the wage she's being paid. The idea is that she's also making tips and that's how she can manage to survive. But the wage itself is $2.43 per hour, and whatever surplus now is created as a profit from this fast food restaurant. Above and beyond this wage and other costs goes to the owner, the bourgeoisie, according to Marx's ideas. Now, the problem is that because of competition between bourgeois. Especially because the small bourgeoisie, the small, you know, restaurant owners, they're competing also with a large bourgeoisie with large capital. So big chains like McDonald's, you know, which are everywhere, right? So these small owners are also competing with the large bourgeoisie. Now, because of this constant competition, you are as an owner, continuously reducing. The wages because your margins are reducing and so you have a continuous pressure to keep decreasing wages because otherwise you as a business will not survive. So now you keep reducing until you reach a wage. That is the bare minimum for this worker to survive because you need the worker, right. Otherwise you cannot run this business. So you keep reducing until you reach a bare minimum for the worker to survive. So that's the question and Ehrenreich discovers that it, this wage, this minimum wage is not sufficient for her to survive. And so she needs 2 jobs just to be able to eat and pay rent, and most of the other workers that she's working for with also have the same situation. So this is an example here of Marx's prediction about how capitalism creates a system, where it destroys itself because it cannot sustain the survival of the very people on whom surplus that is capital is based. Okay, so that was the first application we see in Ehrenreich contemporary application of Marxist ideas of surplus and class struggle. Now we let's look at other concepts that we discussed in Marx. Marx talks about different types of alienation. The first type of alienation is alienation from the product. So you as a worker, you don't have right to the product that you have created. So for instance, if I'm in a factory creating a semiconductor, I don't own that semiconductor, right? I just get a wage. So in Ehrenreich case she serves these huge calorie laden meals, fudge desserts, fried steaks to the customers. But she herself, at the end of the day, she's hungry and servers like her are not allowed to eat at the restaurant where they are serving the food and part of the production process for that food. So this is an example of Marxist's idea of alienation from the product. So what is Marx saying, you have no right to the product itself that you are helping create. You also have no right to the surplus generated by the product. Now, the surplus that is a profit goes to the owner, and this owner never appears in the reading that you have. They Ehrenreich never even meets this person. They never come to the restaurant. So she gets wage and which is not enough for her to survive, but the surplus is going to someone who on the face of it, is not actually involved in the production of this product, which is this fast food. So now what happens in the rest of the excerpt, you know, that she cannot survive with one job. So now she takes up two jobs. So she's working now from 8:00 AM to 10:00 PM every day. And this is, you know, this is not a nice desk job. We are talking about very labor intensive work, which involves standing for hours at a time. And she is kind of my age. You know, even at the age of 18, that's difficult but by the time you reach 45-50, this actually is very painful. And in Ehrenreich's case, she is in intense pain for her intense back pain. So she starts taking ibuprofen before every shift just to get through the shift so that's an example of how of the I of Marxist's idea of she has no right to the surplus generated by the product. Now let's look at another of Marx's concepts, which is alienation from the process of labor. So the job that she is doing is non-creative, repetitive, and subject to strong external control. She doesn't have control over what she does. So, for instance the job of the waitress has been sort of dumbed down. All the skilled part is deemphasized or not compensated. So it's broken down into this mechanical routines of sweeping, scrubbing, refilling, carrying multiple orders, serving, communicating with the chef and the other kitchen team. So whatever part of the job, which requires you to express your own unique skills and talents or personality. So for instance, interaction with the customers knowing your regular customers and talking to them helping them to understand if they have any questions about the menu. All of these are actually deemphasized and in fact, the manager tells her that you are spending too much time on doing this at one point, right. So all of those skilled parts, because in a way, waitressing, like in any service profession, it's emotional labor. You are at some level connecting with this other human being and serving them. So we see in Ehrenreich is exactly what Marx predicts, which is that all of these skills are deemphasized. And the only thing that the hiring managers care about is have you committed any felonies and are you a legal resident of the US? That's it. They don't want to look at what are your skills? What is your previous work experience? Nothing. Because the job has become like a commodity. The worker itself has become like a commodity. There is no difference really between one worker and the next because the job has been de-skilled, the skill element of the job has been de-emphasized. But as she discovers, there is definitely skill involved and the other workers out of kindness and Marx would call it solidarity, keep helping her so that she's able to do this. And so this person who has a PhD feels that the biggest issue is that she misses the feeling of competence because she doesn't have the skills needed to do this pretty demanding job. So in addition to this emotional labor of caring for her customers, serving her customers who are themselves, working class people, for her, she's troubled by, you know, messing up that a table does not get the order on time, or a child at the table gets the order late after everyone else has finished and she cares about it. As a worker, but the management, in fact tries to deemphasize this type of, this type of emotional labor that is a more skilled element of her interaction with her customers. So that is another form of alienation. Alienation from the process of labor. Now let's discuss a third form of alienation, which Marx?s talks about, which is alienation from your fellow workers. So for example, in Ehrenreich, we see that management has a ban on gossip. And gossip is defined as what any kind of talking between workers is looked down upon. Management is suspicious of it or off duty employees sitting together and eating in the restaurant and all of these are ways in which there is the solidarity being built. And Marx will say, this is how proletarian solidarity gets built, because they're all in this together and the management doesn't want that solidarity to get built. So these small acts of kindness between the workers where your covering for a sick colleague, you're helping them do their job, you're training them, you're sharing tips. These are all from the management's perspective, becomes acts of resistance. And the interesting part is that the management here they themselves are wage workers, right. The owners never appear in the whole excerpt. So the managers are themselves people who probably don't have health insurance and are wage workers. But the system creates this antagonistic relationship and because the management has to implement all of these rules. So for instance, if a manager catches you in an idle moment, he will give you something far nastier to do, Ehrenreich makes this comment. So you should never just sit around that is basically the logic. You have to be constantly working because you are being paid by the hour. There is a ban on gossip, talking among workers, lockers can be searched at any time. At any time, you can be asked to pee in a cup to do a urine test. There is a no eating rule, so you know, while you are at work you cannot, any site of food, even though this is a fast food restaurant, is very offensive and against the rules. Now we can look at all this and think, oh, this is the US. You know, this doesn't apply to us, but I would encourage you to think and look all around you. One of the examples Ehrenreich gives is that you know, she's not called by her name. People call her baby or girl, or Blondie or honey. So she, she loses her individuality to the extent that people don't even call her her name. Now think about the Indian context before you dismiss all this by saying, oh, this is only in America. Have you heard the word chotu? So, even a 30-year-old man, because he is working in the small store, he is called show to by everybody. So he loses his name or think of the person who does jhaadoo pochha in your house. The lady who comes to your house and cleans. At the gate, their bags can be checked randomly, or they're asked to keep their bags outside. The idea, the assumption is that they will steal. So very similar random checks locker checks in Ehrenreich's case. And, you know, you might have seen people saying you know, the jhaadoo pochha whoever's doing, you cannot sit. If, she's sitting, that means she doesn't have work. So give her some work. If she's a full-time person in your house and there's always these comment, why do you, why do they eat so much? I mean, they're doing manual labor, so they need to eat, right. And there's this ban, unsaid ban against why, why is a cleaning lady talking to the gardener or the cook? Because they might be plotting against you. They might be gossiping. So very similar, if we look around us, we will see that, this is not a peculiarly American problem. This is a social problem that spans all societies. So another form of alienation that Marx talks about is alienation from the self, from your species being where the worker is reduced to the animal function. Another example from Ehrenreich is of the concept from Marx, which is called alienation, from your species being, where Marx talks about how the worker is reduced to their basic animal function and so you feel human only during your break types, not while you're working. When there is a break is when you get to relax. And Ehrenreich mentioned something similar when during the break is when they get to relax. Finally, let's look at Marx's idea of base and superstructure. So what is Marx's, let's just remind ourselves, what is Marx's idea of base and superstructure? The base is the economic mode of production, the material conditions of production, so instruments of production, relations of production, so that's the base, the foundation. According to Marx, everything else is a superstructure, law, religion, culture, morality, art, literature all of that is superstructure. The purpose of which is just to legitimize the base, right. So we see that when she talks about the worst customers for her are the Christian customers who have just come from church. They don't tip and they look down on her acting as if she's doing something akin to prostitution. Because this the, there is this morality where the idea is that if you are in a low wage job, it must be because you are lazy or some kind of drug addict, or you might be somehow morally deficient and so they look down on her and they feel justified in not tipping her well. So you have this kind of, this moral ideas justifying exploitation. And you know, Ehrenreich is talking from the perspective of American society and so Christianity happens to be the dominant religion of the people in the US but before we feel superior, just think about our, so society, all societies, in fact. Have some kind of value system today that supports capitalistic exploitation and this is what Marx would say. So for instance religious and moral ideas that if somebody is poor, it must be because they have done something wrong in this birth or the last birth. And so they deserve this and so the exploitation is acceptable and we may not do anything about it. So these are, according to Marx, a superstructure built to justify the base, the economic conditions, and the relations, the economic relations between people. Final prediction of Marx, societal instability and revolution. So Ehrenreich shows us how these micro daily struggles of minimum wage workers and helps us to understand how this is a system that drives large populations into misery where they're not able to maintain daily existence. Now, this type of system where the majority is in this situation, it creates solidarity, but it also creates profound instability in the system itself. Businesses cannot really operate successfully in a society which is riddled with chronic poverty, poor health, stress and uncertainty. In addition, this kind of instability, and then you are creating the conditions where solidarity can form automatically. This will, according to Marx, not just threaten the market itself and the capitalist system, it'll lead to revolution according to Marx, perhaps violent armed revolution, yeah. So whether you agree with Marx or not, what I would like you to get out of this this section on Marx is how you can understand the society from the perspective of historical materialism, which we discussed in the last section, how society evolves based on these kind of the the mode of production changing. So that's one. And the second, how the base and superstructure works in every era, in every type of system, whether it was the feudal system or the capitalist system or any other system, whatever is the economic relations and the mode of production, there is that base, but then there is an ideology and a morality and art and literature and political systems which come up to legitimize and to keep that base stable. So we saw that in Ehrenreich in her example of the how the base and superstructure plays out.
+
+💾 Saved as: 25_Ehrenreich's_Ideologies.txt
+
+🚀 Processing Lecture 6: 2.6 Max Weber Ideologies
+🧪 Trying to click index: 5
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@4c0cdabed344412a92960ddf722908cd/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@2f090914db4a44eba4651efa63e69f01
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 57
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So today we are continuing with Weber and one of his most famous writings, the Protestant Ethic and the Spirit of Capitalism, which was published as 2 pieces in 1904 and 1905. So let's just keep the year in mind because Marx published his work approximately 100 years ago. So we had Adam Smith, who was at the beginning of the Industrial Revolution, and who was very excited about the potential of division of labor, the industrial revolution in making all of society prosperous. Then you had Marx who came in about 100 years after when they have actually seen some of the pros, but also the cons of what Industrial Revolution actually has meant in practice for many workers. And now we see Weber who is coming another 100 years, approximately 100 years after Marx. Weber is less concerned about whether capitalism is a good system or not, or whether it should be replaced with a different system. Weber is taking as given that capitalism is here to stay. And he is now asking two important questions, which is one, where did this capitalism come from? How did the feudalist monarch type of society, how did that change into this capitalistic rationalistic society? So first question, where did this capitalism even come from? And second, where is it going? So Weber is not unlike Marx. Weber is not really interested in saying whether capitalism is a good system or a bad system, and should it be replaced. He's taking capitalism as given and asking where did it come from and where is it going? So that's sort of the historical context. We are now 100 years after Marx. So who was Max Weber? He was a German sociologist, historian, political economist. He is considered one of the founders of modern sociology, and he's best known for his work on rationalization bureaucratization and the foundation of these ideas are created in this book, 'The Protestant Ethic and the spirit of Capitalism', which is what we will be discussing today. So the major focus of his life work was this process of rationalization, secularization, and the disenchantment in modern society, which he believed was linked to the rise of capitalism. And so, you know, this is, these are ideas which are still very relevant to us today because we are still having discussions about the increasing rationalization, increasing secularization, and increasing disenchantment in modern society. And the consequences of that in next module when we discuss Durkheim, we will look at more into the consequences of this kind of rationalization, secularization, disenchantment in modern society which many of these scholars believed was linked to the rise of capitalism. So why is Weber interesting to us as social theorists? Couple of reasons, one, his ideas are very much contrasting to Marx in some sense. So Marx talks about how the economics, the material conditions. The mode of production, the relations of production, the instruments of production, they are the foundation and then all of this other stuff, religion, ideology, belief system, morality, value system art. All of this are sort of the super structure, which is essentially meant to maintain whatever the base is. Marx is saying the exact opposite. He is talking about how ideology, and in his case he is specifically talking about religious ideology, but it can be for us as social theorists, it doesn't really matter any kind of ideology. It can be feminism, it can be communism, it can be, you know, any religion. Any kind of belief system, that's what interests us. How does a belief system held by some group of people, how does that shape economic life? In addition, as we discussed before, his views on the rationalization of modern life, secularization and disenchantment, those are also views that help us to understand some of the societal changes that we ourselves are looking at. And finally, from a more scholarly perspective Weber really advocated the use of interpretive methods, qualitative methods, to understand social change and social action. So these are the reasons why Weber is interesting to us as social theorists. Now let's look at a little bit of his life and education. He was born in Germany. Weber's family moved to Berlin when he was very young. His father was a high ranking bureaucrat while his mother was a devout Calvinist. And so he grew up in this household with very contrasting set of value systems and belief systems. So you have his dad, who is this man of the world, sophisticated, worldly, lavish lifestyle, and on the other hand, his mother is a devout Calvinist. Now Calvinism is one of the sets of Protestantism and they're very aesthetic. They believe in a very simple way of living. Any lavish way of living, they are suspicious of they think that is worldliness and going against spirituality. And so Weber kind of grew up with these two contrasting ideologies within his own household. And so is it any wonder that when he looked at the modern European world, this is where he was? So when he looked around him at his society, he also saw the tussle between these contrasting belief systems. So Weber starts with an analysis of what's really the spirit of capitalism. And when he says spirit, he means what is the ethics, the philosophy behind capital. So how do you go about, you know, just think for yourself if you had to, if someone told you your class assignment is that you have to identify the spirit of capitalism, how do you go about doing it? And so this, this is something that at the end we will propose to you as an exercise. But let's now look at how did Weber solve this problem? So he wanted to identify what is the spirit, the philosophy, the ethics of capitalism. And he decided to do this by looking at Ben Franklin's writings because Ben Franklin's writings were extremely popular and famous, and they really exemplified the spirit of capitalism and also Ben Franklin came from that in the United States where capitalism really flourished first. And so in some ways, Ben Franklin exemplifies the spirit of capitalism. And so Weber analyzes Ben Franklin's writings to get at this pure spirit of capitalism. So what is this capitalist mindset from Ben Franklin's writing? So Ben Franklin's writings are very much focusing on punctuality, honesty, frugality, continuous hard work, and he says how all of these help you to build a business to get credit and to be able to invest and grow further. So what are specifically, what are his maxims? One is time is money, and Ben Franklin gives an example. So, for instance, if I am earning 100 rupees a day, let's say if I decide that I actually need only 50 rupees to live in a okay life, you know, I, it's enough for me to live comfortably. And so I decide to sit idle for half a day because half a day's work will give me 50 rupees and I'll spend only 5 rupees. So actually I am still better off because I worked half a day and I haven't really spent everything. I've spent only 5 rupees, so I'm living a comfortable life. But according to Ben Franklin, this is a very wrong way of thinking about it because although you think that you have only spent 5 rupees, what you have actually spent is, or actually you have thrown away, according to Ben Franklin, the 50 rupees that you could have earned if you had worked the whole day. So actually what you have spent is 55 rupees. So it is not just what you have earned, but also what you'll lose if you don't work. So according to him is an example of this idea that time is money and there's an opportunity cost. Another maximum, Ben Franklin is, credit is money. Because money creates money. So Ben Franklin teaches that money is this very prolific generating nature. That's the nature of money. So 5 rupees will turn to 6, which it will turn to 7.3, which it will turn to even more. So this is the basic principle of compounding interest, right. So he goes on in a, in the same example of this person who has lost 55 rupees by working just half a day. Ben Franklin says, actually, it's not just the 55 rupees you've lost. But the remaining 50 rupees that you could have earned, if you had worked that 50 rupees, you could have invested earned interest. And if you keep accumulating this compounding, compounding year after year after year, by the time this young me becomes an old person. That decision to sit idle for half a day has actually cost me a considerable amount of money. So the 2 values that Ben Franklin is talking about is time, is money and credit is money because money creates money. So he focuses on this idea of industry, continuously working, frugality, and being very fair. And he says that if you want to build a business, unless you have all this, you cannot get credit, you cannot invest. You will not be a good business person. So he says the Good Pay master is lot of another man's purse. He that is known to pay punctually and exactly to the time he promises many at any time, and on any occasion can raise all the money that his friends can spare. So he's saying that if you always pay back on time, then when you actually need credit, you will never lack in credit. Everybody will be willing to give you credit. And so he says you should never keep borrowed money for even an hour more than you promised, because if you do that, then the next time your business really needs the money, then you will not be able to borrow. So this is very similar and recognizable for most of you. This is basically the idea of credit worthiness. Nowadays, we actually have, you know credit scores, credit worthiness scores, which actually quantify this same quality that Ben Franklin is talking about. Another point that he really focuses on is hard work. So he says that the most trifling actions that affect a man's credit are to be regarded. The sound of your hammer at 5 in the morning or 8 at night heard by a creditor makes him sleep easy 6 months longer, but if he sees you at a billiard table or hears your voice at a tavern when you should be at work, he immediately sends for his money and demands it back. Ben Franklin also talks about how you should not spend, you should invest. So he says, beware of thinking that all your own that you possess and of living accordingly. Instead, keep an exact amount of your expenses and your income because small trifling expenses will add up. And if you keep track of it, you will discover that if you had instead saved and invested those without causing yourself too much inconvenience, you will have a lot more in future because all of these add up. So what is the ethic here which Weber is identifying as the spirit of capitalism? So it, it's what is being preached here by Ben Franklin is not just a means of making money. It's an ethic. The infraction of its rules is treated not just as foolishness, but as a dereliction of duty. So if you don't do all this, instead of working one full day, you worked only half a day. It's not just that you're foolish and you have, you know, a lot of money that you could have got after, you know, 10 years, 20 years. So it's not just that you are foolish and you've lost all that, but you are morally deficient. You have derelicted your duty. So it is not just an expression of are you good at commercial business activities or it is not just some kind of personality inclination, so it is not morally neutral. It is ethically colored. It's a maxim on how you should live and think and be. So this is what Weber identifies as the ethics that underlie capitalism. It's a philosophy that provides a moral basis for moneymaking. So moneymaking is not greed, but it becomes a moral duty from being something negative, suddenly it has transformed into something which is your moral duty and a sign of your moral behavior. And this is the spirit according to Weber, the ethos of modern capitalism. Now, Weber, it points out to us that actually, when you think about this is not a natural way of thinking. So how did Ben Franklin even come to this idea that this is how we should live? One is he was reflecting the value systems of the place that he was in. He was in this New England, Massachusetts, that area of the United States, and he was expressing those value systems. But Ben Franklin also says that he realized the utility of frugality honesty through divine revelation. So Weber says this earning of more and more of money and the strict avoidance of all forms of personal enjoyment and pleasure. So the earning of money itself is a duty. So from this point of view, if you really think about it, it's kind of irrational. You want to earn money so that you can be happy. But here what is being said is that you have to keep away from all this personal enjoyment, pleasure, all of that, and yet you have to work as if this is your calling, your moral duty. And so it's actually kind of an irrational idea. So this idea of one's beauty as a calling, this according to Weber, is the most characteristic of the social ethic of capitalism. It's an obligation which the individual is supposed to feel or does feel towards her or his professional activity no matter what the activity is. Now, according to Weber, this ideology and belief system existed even before capitalism. Capitalism could not have developed without having had this ideology, and Weber tries to identify where did this somewhat irrational ideology, where did it even come from? Although Weber acknowledges that today, it appears to us as a very taken for granted. We all think so. We think our work, we should have passion for it. We should have motivation for it. We take it for granted. This idea of work as a calling and we don't even question it. But to Weber, he wants to identify, well, it wasn't always like that. The traditional idea was not that money making is a good thing. In fact, the traditional idea was that money making is somewhat, you know, morally questionable activity, it's greedy. So Weber is asking, how did this idea even come about? And this we will discuss in the next clip.
+
+💾 Saved as: 26_Max_Weber_Ideologies.txt
+
+🚀 Processing Lecture 7: 2.7 Capitalism
+🧪 Trying to click index: 6
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@7ca9ab5f7e474957a89f076f820e77eb/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@5ffb953bdffb42f997a0d25c7ec0107b
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+
+##(the terminal from below this could be overlapsed or a bit missing coz the output was too long and exceeded the terminal hence, to give you full context I copied the 1 part before then the other part to give you full idea.)
+
+ subsection on Marx. One is the idea of base and superstructure. Base is the economic foundation of society. So modes of production, instruments of production. Superstructure is everything built on top of that base, and that includes everything from education, value systems, literature, art, law, political system, all of that. And then the idea of historical materialism which is this idea of how we went from primitive society to slave society, to feudalism, to capitalism. And according to Marx, we will finally end with communism, which is an ideal society. But forgetting about that bit, what I want you to take away is this idea of historical materialism where history evolves because there is a change in the material conditions, the economic conditions, the modes of production. So those are the 2 key concepts that I want you to take away with you based in superstructure, historical materialism. And now I want you to apply these concepts to our own lives. So to do that, I have 2 exercises for you. One is I want you to look at our own history, Indian history. The transition, globalization, going from colonialism to an independent country, rural to urban value systems. I want you to think about any of these changes. There are so many, such changes. I want you to think about any of these changes and reflect on how Marx's concepts, historical materialism, and base in superstructure can be used to explain that change. Any social change is complex and can be understood from multiple perspectives. And in this course we'll look at multiple perspectives. Marx is only one among the many perspectives that we will look at, but as part of the access the session on Marx, I want you to apply Marx's ideas to any of these historical changes that we ourselves have seen in our country and analyze it from that perspective. So that's one. Second, I want you to look at the future. It seems clear that AI, robotics, all of this will completely change the mode of production. I want you to think about how this might change the relations of society. Might it lead to even greater concentration of capital where the middle class totally disappears and you just have two extremes, very poor and very rich because the capital needed now is even bigger or maybe there's some other change. Maybe it equalizes the world. Maybe it means that each of us work only 2 hours a day or only 2 days a week, and we spend the rest of our time on improving ourselves. Hobbies, leisure activities, spending time with family, focusing on our health and wellbeing. Maybe that's the change. I want you to think about how this change in the material conditions of production might change things like art, literature, politics, value systems. So with that, I will end the section on Marx and I hope you will do these 2 exercises that you have been given to look at the past and also to look at the future.
+
+💾 Saved as: 24_Aims_of_Communism.txt
+
+🚀 Processing Lecture 5: 2.5 Ehrenreich's Ideologies
+🧪 Trying to click index: 4
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@cb033d1db0974cad82298c57de277ce8/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@e5c43f9bae8e436897f35d5da6835408
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 57
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So today in this module, we will now take forward Marx's ideas and look at a contemporary application of Marx's ideas. This will help us to understand how these ideas are being used today. And it'll give you examples of concepts like base and superstructure, the different forms of alienation, surplus and class struggles. So with this purpose in mind today, we are going to look at this work by Barbara Ehrenreich called Nickel and Dimed. This was written in 2001, so this is a contemporary piece. Now very briefly, who was Barbara Ehrenreich. She is a contemporary of ours. She passed away in 2022. She was born in 1941 in a blue-collar mining town. Her father was a copper miner who later became a senior executive at the Gillette Corporation. So you can see that, you know, biography, going back to Mill's Ideas. Her biography, her background in a blue-collar mining town with her father as a blue-collar worker. That definitely has had an influence on the later work that she has done. So this goes back to Mills' ideas of how biography impacts history. She attended Reed College, majoring in physics, chemistry and then went on to get a PhD in cellular immunology. So this is very different from the final work that she ended up doing. And how did this shift happen? After the birth of her first child, she underwent a really big personal and professional transformation because of her experiences giving birth she became very involved in the women's health movement and then also the issues of labor and Labor movement. She's best known for this book, and you have all, it's a required reading. You've read an excerpt from this book called Nickel and Dimed and this book, it's her most famous work. And it was written in this context where in the US at the time in the 1990s, there was this big debate going on and it was based on sort of this, contrasting view of work. So the belief was that there, there were too many unemployed people and there were too many unemployment and other benefits being given to these people and because you had so many benefits, people didn't want to work. They were becoming lazier and lazier. So the idea was that these poor people who the government was giving benefits too. They could have easily escaped poverty if they simply chose to work and they were not choosing to work because of all these benefits, and that's why now society was having to support them. So her goal was to determine if this is actually true. If a full-time, low wage job in America could actually cover the basic cost of living rent, food, healthcare, so that was her objective in this work. Now, for this work, she was doing this kind of social experiment and she imposed on herself 3 rules. The first was that she had to take the highest paying job that she could find in the local area. The second is she had to take any job offered without relying on any of her prior professional contacts or any of her prior skills. Now remember, she had a PhD, but she is now applying for labor intensive, low skilled jobs, and she had to use her actual earnings from these jobs for all her expenses, housing, food, transport, everything. She could not use credit cards or she could not rely on her own personal previous savings. So this was the experiment that she had decided to do. Now, what was the core question? The core question was, can a person survive and maintain basic human dignity, working full-time at minimum or low wage jobs in America? Now, remember, America is supposed to be one of the richest countries in the world. So the question is if you work full-time in America at a minimum or low wage job, can you maintain basic human dignity and can you maintain yourself and survive? That's the question. Now you've all read the paper. So what I would like to do in this section and video is I would like to discuss how Ehrenreich work helps us to understand Marxist's ideas. And specifically, which ideas will this work allow us to understand? One is the idea of surplus value and class war. Second is the different forms of alienation. The third is the idea of base and superstructure. Finally, the idea of societal instability and possibly revolution. So these are the four ideas that we'll use  Ehrenreich's work to understand these ideas better. So first concept, surplus value, and 2 classes. So in Ehrenreich's work, we see the application of this idea of surplus value, class wars and minimum living wage. So what is surplus value? The difference between the value a worker creates and the wage they receive is called surplus value according to Marx. And this surplus value, according to Marx, is the source of the capitalist profit. So in Ehrenreich's case, she's getting $2.43 dollars per hour. So this is the wage she's being paid. The idea is that she's also making tips and that's how she can manage to survive. But the wage itself is $2.43 per hour, and whatever surplus now is created as a profit from this fast food restaurant. Above and beyond this wage and other costs goes to the owner, the bourgeoisie, according to Marx's ideas. Now, the problem is that because of competition between bourgeois. Especially because the small bourgeoisie, the small, you know, restaurant owners, they're competing also with a large bourgeoisie with large capital. So big chains like McDonald's, you know, which are everywhere, right? So these small owners are also competing with the large bourgeoisie. Now, because of this constant competition, you are as an owner, continuously reducing. The wages because your margins are reducing and so you have a continuous pressure to keep decreasing wages because otherwise you as a business will not survive. So now you keep reducing until you reach a wage. That is the bare minimum for this worker to survive because you need the worker, right. Otherwise you cannot run this business. So you keep reducing until you reach a bare minimum for the worker to survive. So that's the question and Ehrenreich discovers that it, this wage, this minimum wage is not sufficient for her to survive. And so she needs 2 jobs just to be able to eat and pay rent, and most of the other workers that she's working for with also have the same situation. So this is an example here of Marx's prediction about how capitalism creates a system, where it destroys itself because it cannot sustain the survival of the very people on whom surplus that is capital is based. Okay, so that was the first application we see in Ehrenreich contemporary application of Marxist ideas of surplus and class struggle. Now we let's look at other concepts that we discussed in Marx. Marx talks about different types of alienation. The first type of alienation is alienation from the product. So you as a worker, you don't have right to the product that you have created. So for instance, if I'm in a factory creating a semiconductor, I don't own that semiconductor, right? I just get a wage. So in Ehrenreich case she serves these huge calorie laden meals, fudge desserts, fried steaks to the customers. But she herself, at the end of the day, she's hungry and servers like her are not allowed to eat at the restaurant where they are serving the food and part of the production process for that food. So this is an example of Marxist's idea of alienation from the product. So what is Marx saying, you have no right to the product itself that you are helping create. You also have no right to the surplus generated by the product. Now, the surplus that is a profit goes to the owner, and this owner never appears in the reading that you have. They Ehrenreich never even meets this person. They never come to the restaurant. So she gets wage and which is not enough for her to survive, but the surplus is going to someone who on the face of it, is not actually involved in the production of this product, which is this fast food. So now what happens in the rest of the excerpt, you know, that she cannot survive with one job. So now she takes up two jobs. So she's working now from 8:00 AM to 10:00 PM every day. And this is, you know, this is not a nice desk job. We are talking about very labor intensive work, which involves standing for hours at a time. And she is kind of my age. You know, even at the age of 18, that's difficult but by the time you reach 45-50, this actually is very painful. And in Ehrenreich's case, she is in intense pain for her intense back pain. So she starts taking ibuprofen before every shift just to get through the shift so that's an example of how of the I of Marxist's idea of she has no right to the surplus generated by the product. Now let's look at another of Marx's concepts, which is alienation from the process of labor. So the job that she is doing is non-creative, repetitive, and subject to strong external control. She doesn't have control over what she does. So, for instance the job of the waitress has been sort of dumbed down. All the skilled part is deemphasized or not compensated. So it's broken down into this mechanical routines of sweeping, scrubbing, refilling, carrying multiple orders, serving, communicating with the chef and the other kitchen team. So whatever part of the job, which requires you to express your own unique skills and talents or personality. So for instance, interaction with the customers knowing your regular customers and talking to them helping them to understand if they have any questions about the menu. All of these are actually deemphasized and in fact, the manager tells her that you are spending too much time on doing this at one point, right. So all of those skilled parts, because in a way, waitressing, like in any service profession, it's emotional labor. You are at some level connecting with this other human being and serving them. So we see in Ehrenreich is exactly what Marx predicts, which is that all of these skills are deemphasized. And the only thing that the hiring managers care about is have you committed any felonies and are you a legal resident of the US? That's it. They don't want to look at what are your skills? What is your previous work experience? Nothing. Because the job has become like a commodity. The worker itself has become like a commodity. There is no difference really between one worker and the next because the job has been de-skilled, the skill element of the job has been de-emphasized. But as she discovers, there is definitely skill involved and the other workers out of kindness and Marx would call it solidarity, keep helping her so that she's able to do this. And so this person who has a PhD feels that the biggest issue is that she misses the feeling of competence because she doesn't have the skills needed to do this pretty demanding job. So in addition to this emotional labor of caring for her customers, serving her customers who are themselves, working class people, for her, she's troubled by, you know, messing up that a table does not get the order on time, or a child at the table gets the order late after everyone else has finished and she cares about it. As a worker, but the management, in fact tries to deemphasize this type of, this type of emotional labor that is a more skilled element of her interaction with her customers. So that is another form of alienation. Alienation from the process of labor. Now let's discuss a third form of alienation, which Marx?s talks about, which is alienation from your fellow workers. So for example, in Ehrenreich, we see that management has a ban on gossip. And gossip is defined as what any kind of talking between workers is looked down upon. Management is suspicious of it or off duty employees sitting together and eating in the restaurant and all of these are ways in which there is the solidarity being built. And Marx will say, this is how proletarian solidarity gets built, because they're all in this together and the management doesn't want that solidarity to get built. So these small acts of kindness between the workers where your covering for a sick colleague, you're helping them do their job, you're training them, you're sharing tips. These are all from the management's perspective, becomes acts of resistance. And the interesting part is that the management here they themselves are wage workers, right. The owners never appear in the whole excerpt. So the managers are themselves people who probably don't have health insurance and are wage workers. But the system creates this antagonistic relationship and because the management has to implement all of these rules. So for instance, if a manager catches you in an idle moment, he will give you something far nastier to do, Ehrenreich makes this comment. So you should never just sit around that is basically the logic. You have to be constantly working because you are being paid by the hour. There is a ban on gossip, talking among workers, lockers can be searched at any time. At any time, you can be asked to pee in a cup to do a urine test. There is a no eating rule, so you know, while you are at work you cannot, any site of food, even though this is a fast food restaurant, is very offensive and against the rules. Now we can look at all this and think, oh, this is the US. You know, this doesn't apply to us, but I would encourage you to think and look all around you. One of the examples Ehrenreich gives is that you know, she's not called by her name. People call her baby or girl, or Blondie or honey. So she, she loses her individuality to the extent that people don't even call her her name. Now think about the Indian context before you dismiss all this by saying, oh, this is only in America. Have you heard the word chotu? So, even a 30-year-old man, because he is working in the small store, he is called show to by everybody. So he loses his name or think of the person who does jhaadoo pochha in your house. The lady who comes to your house and cleans. At the gate, their bags can be checked randomly, or they're asked to keep their bags outside. The idea, the assumption is that they will steal. So very similar random checks locker checks in Ehrenreich's case. And, you know, you might have seen people saying you know, the jhaadoo pochha whoever's doing, you cannot sit. If, she's sitting, that means she doesn't have work. So give her some work. If she's a full-time person in your house and there's always these comment, why do you, why do they eat so much? I mean, they're doing manual labor, so they need to eat, right. And there's this ban, unsaid ban against why, why is a cleaning lady talking to the gardener or the cook? Because they might be plotting against you. They might be gossiping. So very similar, if we look around us, we will see that, this is not a peculiarly American problem. This is a social problem that spans all societies. So another form of alienation that Marx talks about is alienation from the self, from your species being where the worker is reduced to the animal function. Another example from Ehrenreich is of the concept from Marx, which is called alienation, from your species being, where Marx talks about how the worker is reduced to their basic animal function and so you feel human only during your break types, not while you're working. When there is a break is when you get to relax. And Ehrenreich mentioned something similar when during the break is when they get to relax. Finally, let's look at Marx's idea of base and superstructure. So what is Marx's, let's just remind ourselves, what is Marx's idea of base and superstructure? The base is the economic mode of production, the material conditions of production, so instruments of production, relations of production, so that's the base, the foundation. According to Marx, everything else is a superstructure, law, religion, culture, morality, art, literature all of that is superstructure. The purpose of which is just to legitimize the base, right. So we see that when she talks about the worst customers for her are the Christian customers who have just come from church. They don't tip and they look down on her acting as if she's doing something akin to prostitution. Because this the, there is this morality where the idea is that if you are in a low wage job, it must be because you are lazy or some kind of drug addict, or you might be somehow morally deficient and so they look down on her and they feel justified in not tipping her well. So you have this kind of, this moral ideas justifying exploitation. And you know, Ehrenreich is talking from the perspective of American society and so Christianity happens to be the dominant religion of the people in the US but before we feel superior, just think about our, so society, all societies, in fact. Have some kind of value system today that supports capitalistic exploitation and this is what Marx would say. So for instance religious and moral ideas that if somebody is poor, it must be because they have done something wrong in this birth or the last birth. And so they deserve this and so the exploitation is acceptable and we may not do anything about it. So these are, according to Marx, a superstructure built to justify the base, the economic conditions, and the relations, the economic relations between people. Final prediction of Marx, societal instability and revolution. So Ehrenreich shows us how these micro daily struggles of minimum wage workers and helps us to understand how this is a system that drives large populations into misery where they're not able to maintain daily existence. Now, this type of system where the majority is in this situation, it creates solidarity, but it also creates profound instability in the system itself. Businesses cannot really operate successfully in a society which is riddled with chronic poverty, poor health, stress and uncertainty. In addition, this kind of instability, and then you are creating the conditions where solidarity can form automatically. This will, according to Marx, not just threaten the market itself and the capitalist system, it'll lead to revolution according to Marx, perhaps violent armed revolution, yeah. So whether you agree with Marx or not, what I would like you to get out of this this section on Marx is how you can understand the society from the perspective of historical materialism, which we discussed in the last section, how society evolves based on these kind of the the mode of production changing. So that's one. And the second, how the base and superstructure works in every era, in every type of system, whether it was the feudal system or the capitalist system or any other system, whatever is the economic relations and the mode of production, there is that base, but then there is an ideology and a morality and art and literature and political systems which come up to legitimize and to keep that base stable. So we saw that in Ehrenreich in her example of the how the base and superstructure plays out.
+
+💾 Saved as: 25_Ehrenreich's_Ideologies.txt
+
+🚀 Processing Lecture 6: 2.6 Max Weber Ideologies
+🧪 Trying to click index: 5
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@4c0cdabed344412a92960ddf722908cd/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@2f090914db4a44eba4651efa63e69f01
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 57
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So today we are continuing with Weber and one of his most famous writings, the Protestant Ethic and the Spirit of Capitalism, which was published as 2 pieces in 1904 and 1905. So let's just keep the year in mind because Marx published his work approximately 100 years ago. So we had Adam Smith, who was at the beginning of the Industrial Revolution, and who was very excited about the potential of division of labor, the industrial revolution in making all of society prosperous. Then you had Marx who came in about 100 years after when they have actually seen some of the pros, but also the cons of what Industrial Revolution actually has meant in practice for many workers. And now we see Weber who is coming another 100 years, approximately 100 years after Marx. Weber is less concerned about whether capitalism is a good system or not, or whether it should be replaced with a different system. Weber is taking as given that capitalism is here to stay. And he is now asking two important questions, which is one, where did this capitalism come from? How did the feudalist monarch type of society, how did that change into this capitalistic rationalistic society? So first question, where did this capitalism even come from? And second, where is it going? So Weber is not unlike Marx. Weber is not really interested in saying whether capitalism is a good system or a bad system, and should it be replaced. He's taking capitalism as given and asking where did it come from and where is it going? So that's sort of the historical context. We are now 100 years after Marx. So who was Max Weber? He was a German sociologist, historian, political economist. He is considered one of the founders of modern sociology, and he's best known for his work on rationalization bureaucratization and the foundation of these ideas are created in this book, 'The Protestant Ethic and the spirit of Capitalism', which is what we will be discussing today. So the major focus of his life work was this process of rationalization, secularization, and the disenchantment in modern society, which he believed was linked to the rise of capitalism. And so, you know, this is, these are ideas which are still very relevant to us today because we are still having discussions about the increasing rationalization, increasing secularization, and increasing disenchantment in modern society. And the consequences of that in next module when we discuss Durkheim, we will look at more into the consequences of this kind of rationalization, secularization, disenchantment in modern society which many of these scholars believed was linked to the rise of capitalism. So why is Weber interesting to us as social theorists? Couple of reasons, one, his ideas are very much contrasting to Marx in some sense. So Marx talks about how the economics, the material conditions. The mode of production, the relations of production, the instruments of production, they are the foundation and then all of this other stuff, religion, ideology, belief system, morality, value system art. All of this are sort of the super structure, which is essentially meant to maintain whatever the base is. Marx is saying the exact opposite. He is talking about how ideology, and in his case he is specifically talking about religious ideology, but it can be for us as social theorists, it doesn't really matter any kind of ideology. It can be feminism, it can be communism, it can be, you know, any religion. Any kind of belief system, that's what interests us. How does a belief system held by some group of people, how does that shape economic life? In addition, as we discussed before, his views on the rationalization of modern life, secularization and disenchantment, those are also views that help us to understand some of the societal changes that we ourselves are looking at. And finally, from a more scholarly perspective Weber really advocated the use of interpretive methods, qualitative methods, to understand social change and social action. So these are the reasons why Weber is interesting to us as social theorists. Now let's look at a little bit of his life and education. He was born in Germany. Weber's family moved to Berlin when he was very young. His father was a high ranking bureaucrat while his mother was a devout Calvinist. And so he grew up in this household with very contrasting set of value systems and belief systems. So you have his dad, who is this man of the world, sophisticated, worldly, lavish lifestyle, and on the other hand, his mother is a devout Calvinist. Now Calvinism is one of the sets of Protestantism and they're very aesthetic. They believe in a very simple way of living. Any lavish way of living, they are suspicious of they think that is worldliness and going against spirituality. And so Weber kind of grew up with these two contrasting ideologies within his own household. And so is it any wonder that when he looked at the modern European world, this is where he was? So when he looked around him at his society, he also saw the tussle between these contrasting belief systems. So Weber starts with an analysis of what's really the spirit of capitalism. And when he says spirit, he means what is the ethics, the philosophy behind capital. So how do you go about, you know, just think for yourself if you had to, if someone told you your class assignment is that you have to identify the spirit of capitalism, how do you go about doing it? And so this, this is something that at the end we will propose to you as an exercise. But let's now look at how did Weber solve this problem? So he wanted to identify what is the spirit, the philosophy, the ethics of capitalism. And he decided to do this by looking at Ben Franklin's writings because Ben Franklin's writings were extremely popular and famous, and they really exemplified the spirit of capitalism and also Ben Franklin came from that in the United States where capitalism really flourished first. And so in some ways, Ben Franklin exemplifies the spirit of capitalism. And so Weber analyzes Ben Franklin's writings to get at this pure spirit of capitalism. So what is this capitalist mindset from Ben Franklin's writing? So Ben Franklin's writings are very much focusing on punctuality, honesty, frugality, continuous hard work, and he says how all of these help you to build a business to get credit and to be able to invest and grow further. So what are specifically, what are his maxims? One is time is money, and Ben Franklin gives an example. So, for instance, if I am earning 100 rupees a day, let's say if I decide that I actually need only 50 rupees to live in a okay life, you know, I, it's enough for me to live comfortably. And so I decide to sit idle for half a day because half a day's work will give me 50 rupees and I'll spend only 5 rupees. So actually I am still better off because I worked half a day and I haven't really spent everything. I've spent only 5 rupees, so I'm living a comfortable life. But according to Ben Franklin, this is a very wrong way of thinking about it because although you think that you have only spent 5 rupees, what you have actually spent is, or actually you have thrown away, according to Ben Franklin, the 50 rupees that you could have earned if you had worked the whole day. So actually what you have spent is 55 rupees. So it is not just what you have earned, but also what you'll lose if you don't work. So according to him is an example of this idea that time is money and there's an opportunity cost. Another maximum, Ben Franklin is, credit is money. Because money creates money. So Ben Franklin teaches that money is this very prolific generating nature. That's the nature of money. So 5 rupees will turn to 6, which it will turn to 7.3, which it will turn to even more. So this is the basic principle of compounding interest, right. So he goes on in a, in the same example of this person who has lost 55 rupees by working just half a day. Ben Franklin says, actually, it's not just the 55 rupees you've lost. But the remaining 50 rupees that you could have earned, if you had worked that 50 rupees, you could have invested earned interest. And if you keep accumulating this compounding, compounding year after year after year, by the time this young me becomes an old person. That decision to sit idle for half a day has actually cost me a considerable amount of money. So the 2 values that Ben Franklin is talking about is time, is money and credit is money because money creates money. So he focuses on this idea of industry, continuously working, frugality, and being very fair. And he says that if you want to build a business, unless you have all this, you cannot get credit, you cannot invest. You will not be a good business person. So he says the Good Pay master is lot of another man's purse. He that is known to pay punctually and exactly to the time he promises many at any time, and on any occasion can raise all the money that his friends can spare. So he's saying that if you always pay back on time, then when you actually need credit, you will never lack in credit. Everybody will be willing to give you credit. And so he says you should never keep borrowed money for even an hour more than you promised, because if you do that, then the next time your business really needs the money, then you will not be able to borrow. So this is very similar and recognizable for most of you. This is basically the idea of credit worthiness. Nowadays, we actually have, you know credit scores, credit worthiness scores, which actually quantify this same quality that Ben Franklin is talking about. Another point that he really focuses on is hard work. So he says that the most trifling actions that affect a man's credit are to be regarded. The sound of your hammer at 5 in the morning or 8 at night heard by a creditor makes him sleep easy 6 months longer, but if he sees you at a billiard table or hears your voice at a tavern when you should be at work, he immediately sends for his money and demands it back. Ben Franklin also talks about how you should not spend, you should invest. So he says, beware of thinking that all your own that you possess and of living accordingly. Instead, keep an exact amount of your expenses and your income because small trifling expenses will add up. And if you keep track of it, you will discover that if you had instead saved and invested those without causing yourself too much inconvenience, you will have a lot more in future because all of these add up. So what is the ethic here which Weber is identifying as the spirit of capitalism? So it, it's what is being preached here by Ben Franklin is not just a means of making money. It's an ethic. The infraction of its rules is treated not just as foolishness, but as a dereliction of duty. So if you don't do all this, instead of working one full day, you worked only half a day. It's not just that you're foolish and you have, you know, a lot of money that you could have got after, you know, 10 years, 20 years. So it's not just that you are foolish and you've lost all that, but you are morally deficient. You have derelicted your duty. So it is not just an expression of are you good at commercial business activities or it is not just some kind of personality inclination, so it is not morally neutral. It is ethically colored. It's a maxim on how you should live and think and be. So this is what Weber identifies as the ethics that underlie capitalism. It's a philosophy that provides a moral basis for moneymaking. So moneymaking is not greed, but it becomes a moral duty from being something negative, suddenly it has transformed into something which is your moral duty and a sign of your moral behavior. And this is the spirit according to Weber, the ethos of modern capitalism. Now, Weber, it points out to us that actually, when you think about this is not a natural way of thinking. So how did Ben Franklin even come to this idea that this is how we should live? One is he was reflecting the value systems of the place that he was in. He was in this New England, Massachusetts, that area of the United States, and he was expressing those value systems. But Ben Franklin also says that he realized the utility of frugality honesty through divine revelation. So Weber says this earning of more and more of money and the strict avoidance of all forms of personal enjoyment and pleasure. So the earning of money itself is a duty. So from this point of view, if you really think about it, it's kind of irrational. You want to earn money so that you can be happy. But here what is being said is that you have to keep away from all this personal enjoyment, pleasure, all of that, and yet you have to work as if this is your calling, your moral duty. And so it's actually kind of an irrational idea. So this idea of one's beauty as a calling, this according to Weber, is the most characteristic of the social ethic of capitalism. It's an obligation which the individual is supposed to feel or does feel towards her or his professional activity no matter what the activity is. Now, according to Weber, this ideology and belief system existed even before capitalism. Capitalism could not have developed without having had this ideology, and Weber tries to identify where did this somewhat irrational ideology, where did it even come from? Although Weber acknowledges that today, it appears to us as a very taken for granted. We all think so. We think our work, we should have passion for it. We should have motivation for it. We take it for granted. This idea of work as a calling and we don't even question it. But to Weber, he wants to identify, well, it wasn't always like that. The traditional idea was not that money making is a good thing. In fact, the traditional idea was that money making is somewhat, you know, morally questionable activity, it's greedy. So Weber is asking, how did this idea even come about? And this we will discuss in the next clip.
+
+💾 Saved as: 26_Max_Weber_Ideologies.txt
+
+🚀 Processing Lecture 7: 2.7 Capitalism
+🧪 Trying to click index: 6
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@7ca9ab5f7e474957a89f076f820e77eb/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@5ffb953bdffb42f997a0d25c7ec0107b
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 60
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So in the previous clip we talked about the ethics behind capitalism, the spirit of capitalism. Now we'll discuss according to Weber, where did the spirit of capitalism even come from? Now, the key thing is that this kind of spirit of capitalism, it's not enough if just one individual holds all these views, frugality, honesty, time is money, credit is money, all of that. It's not enough if just one person holds this. Capitalist system relies on economic transactions, so a group of people have to hold this view for it to originate. Now Weber, he looks at the concept of historical materialism. Now I'm going to ask you here to think about who talked about historical materialism. And let's hope you are able to connect the dots that Marx came up with the idea of historical materialism. So Weber now, because Marx wrote his stuff about 100 years ago. So Weber is actually kind of making fun of this idea and saying that this idea of historical materialism is naive. Because he says, the birthplace of capitalism where capitalism first flourished the New England colonies, Massachusetts, Pennsylvania, all those areas, this ideology existed before capitalism flourished, and these New England colonies were founded by preachers and graduates of seminaries. You know, really very deeply religious people and it was established for religious reasons. It was not established for commercial reasons. They came because they were fleeing persecution from the other established traditional religion of Catholicism in Europe. They were fleeing that, and so that's why they had come to these New England colonies in the United States. And it was these preachers, not tradespeople, not, you know, people with large capital already they, that is where capitalism was born, and this ideology had to fight against really strong hostile forces in the ancient and middle ages where this type of philosophy of moneymaking interest growth was considered the lowest form of greed. It was seen as an attitude lacking in all self-respect and so noble people. The courtiers, they, you know, they considered it very much beneath them to engage in any kind of commercial activity. It was very shameful for a noble family to go into some kind of commercial transaction. And this is not because the people in ancient and middle ages were, you know, very altruistic and they were not greedy. That is not at all true. The greed for gold existed since time immemorial. In fact, according to Weber greed, and unscrupulous in the pursuit of moneymaking is actually a specific characteristic of pre-capitalist society. The capitalist society has to fight against that for it to be get established. So the lack of conscience where the worker shirks their duties, where you have to have someone observing the worker all the time to make sure that they do their job. This attitude that I will do the minimum possible for me to survive. I'm not going to take initiative and do extra. I'm going to do the way things were done before. I'm not going to try all these new things. So according to Weber, those value systems, those ideologies are actually the biggest impediment to capitalism. So justice, capitalism cannot really use a worker who shirks their duties. Capitalism also cannot use a businessman who is unscrupulous in her dealings, and so capitalistic development did not come from greed and the making of money at any cost. In fact, this type of traditionalism is the fundamental enemy that capitalism has to overcome for it to be established. So what is this traditionalist view? Weber gives an example. So when, let's say it's a farming society, and when gathering a harvest, that's when you need the greatest number of workers and speed is very essential. Now, this speed can mean the difference between profit and heavy loss. And so workers are paid more per hour during these times with the idea that, okay, if I pay more per hour, then I'll attract more workers and also my existing workers will work longer. However, in traditional societies, one of the biggest problems is that increasing the hourly rate actually reduces the availability of labor. Because the workers think, okay, I need only this much to survive. Before you were paying me a per hour rate of 100 rupees, now you are paying me 120. So I need to work less hours because I need only this much to survive, and once I have this much, I can relax and enjoy life. And so this is the natural, traditional way of living to work enough to survive and live in a way that is comfortable. By nature according to Weber, humans do not wish to earn more and more and more money. Now, this attitude, according to Weber, is the primary roadblock faced by capitalism when it tries to increase the productivity of human labor by incentivizing it, it runs into this roadblock of this traditionalist attitude. So the opposite approach is to pay less so that the worker has to do work more and more to survive. So then you have sufficient labor. But Weber says this actually doesn't work because low wages usually result in low quality work. And you run into workers who have a traditionalist attitude where they are unwilling to learn new things, work with new me machinery, new technology. They wanna insist on doing things the way it was done, the traditional way. So you will run across craft type workers who will say, you know, five generations of my family have done it this way. Now you are introducing this new missionary I, you know, this goes against all tradition, all history, so I will not do it. So, according to Weber, all of these are big roadblocks, a traditionalist view held in precap society, which capitalism has to fight against to establish itself. So what capitalism really needs for it to be established is an attitude which says, what is the maximum I can do with the minimum of comfort? What it really needs are workers who work as if their work was a calling, an end in itself, diligent, requiring no manager, no oversight because they themselves are motivated to work to the best of their ability. And this idea where the worker believes that their work is their calling, it does not come naturally. It comes only from a long process of education and some kind of ideology. Of course, Weber recognizes that now because capitalism is spread everywhere, this attitude is everywhere, and so we take it for granted. But in the past, capitalists faced this issue of having to deal with this traditionalist mindset everywhere. Now, according to Weber, these Protestant workmen, now remember Protestantism was came up as a movement against Catholicism. So these Protestant workmen who had this idea that work is a calling from God. They were actually facing persecution everywhere because they, this was a new revolutionary movement, and so the traditionalist workers actually came and destroyed their tools and persecuted them, and that's why many of them fled from Europe to the United States. And it was not, according to Weber, the most opulent, the richest courts of Italy and France. That's not where the shift happened. It happened in these small, new townships, quite poor by comparison, in these New England colonies and in some other pockets in Europe. So this again, is to Weber it shows that it is not where capital was already there in the most opulent and richest courts, that's not where capitalism was formed. It was formed in these relatively poorer areas where they did not have this accumulation of capital already. So this philosophy of rationalism where there is this continuous focus on rigorously looking at how can I become more and more efficient? How can I produce more, how can I produce a better quality product and this continuous focus on improvement, looking at the data and then improving even further and investing towards accomplishing more and more efficiency and more and more scale. So this kind of philosophy of rationalism, it had to fight against all these other philosophies, this hand to mouth existence of the peasant do only with what is enough to survive. And the privileged traditionalism of the craftsmen where you create one artistic product, because that's what generations of artisans have done rather than create 100 manufactured ones using some machinery, or the feudal, the courtesans, the nobles, where they were exploiting political opportunities. Or just sheer speculation and adventurism where you go on these voyages and you kind of invade somebody and get their wealth. So these were all the ways of living in the ancient and middle ages and capitalism had to really go against all of these kind of ways of thinking and living. So according to Weber, the spirit of capitalism is best understood as part of the development of rationalism as a whole. However, he says that this development of rationalism cannot fully explain the spirit of capitalism because there is an irrational element in within the spirit of capitalism. This irrational element is this idea that once work is a calling that we exist to work which is irrational from a very narrow, self-interested point of view. So the spirit of capitalism needs this irrational element where not just the capitalist, but even the workers, they must perform their work as if it were an absolute end in itself, a calling. So where does this idea come from? And now this is where Weber tells us about the ideological basis for it. Where does this irrational idea come from? And we will look at that in the next subsection.
+
+💾 Saved as: 27_Capitalism.txt
+
+🚀 Processing Lecture 8: 2.8 The Degeneration of Ethic
+🧪 Trying to click index: 7
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@f21fc57843fe46fea325bb01f5b2c589/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@d293fac52cbe4719aa636c84d3da7a69
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 1
+✅ USING SELECTOR: ol[id*='transcript'] span
+Avg line length: 60
+✅ FOUND REAL TRANSCRIPT IN IFRAME 0
+
+📄 Lecture Content:
+
+So now we look at the final argument of Weber, which is looking at, well, okay, this kind of spirit, this ideology led to flourishing of capitalism, which then spread everywhere and now what is the consequence for modern society? So he talks about how whenever you have the strict combination of conduct is very much regulated and you have strict limits of consumption, you'll see wealth accumulation. And then once you have this richest accumulating over generations, the discipline and frugality, that original sort of that fervor and passion and zeal that breaks down. And so you see this secularizing influence of wealth. So as capitalism slowly took over from these small pockets where you had these preachers and very religious folks, where it developed then grew into this entire world order, and it determines the lives of individuals who we are born into the system and we are pulled into this idea of continuous acquisition, continuous more and more and more work and money, like an irresistible force over which we don't have as much control as we think we do. And so the famous quote from Weber, 'The care for external goods should lie on the shoulders of a saint, like a light cloak, which can be thrown aside at any moment but fate decreed that the cloak should become an iron cage'. And so this care of external goods, which initially the spirit was that, you know, you don't really care about the external goods, you care about this, you know, this passionate zeal, right? So the care for external goods is like a light cloak, which lies on your shoulders, which you can throw aside at any moment. But fate has decreed that this cloak should now become an iron cage. And so you are like a rat in this cage, running, running, running more and more and more. So, 'Material goods have gained an increasing and finally an inexorable power over the lives of humans, as at no previous period in history'. So this is Weber speaking in the 1900s. And then Weber talks about how, 'Victorious capitalism no longer needs the support of this ethic. This religious thing is no longer needed. So the idea of duty in one's calling prowls about in our lives, like the ghost of dead religious beliefs'. But this idea of calling and vocation and duty, it still is there in our lives. It still prowls about in our lives, like the ghost of dead religious beliefs, that's the quote from Weber. And so in the field of the highest development of capitalism, the United States, the pursuit of wealth, stripped of its religious and ethical meaning tends to become associated with purely mundane passions, which often actually give it the character of a sport. So now I'll ask you to go back to that clip we watched from the Wall Street of Garden Gecko. And, you know, that whole movie, you get the sense that, you know, this moneymaking, it's like a spoke there's no real passion behind you are doing it as if it's a game. And if some people get hurt, some people don't. That's all par for the course. And that is exactly what Weber is saying, that all of those ideals are stripped away and all that is left is something which takes on a character of a sport. And so now we become, and a quote from Weber, 'Specialists Without Spirit, sensualists without heart, this nullity imagines that it has attained a level of civilization never before achieved'. So we are luxuriating in all these material goods and so we essential is without heart, and we imagine that we have reached some high level of civilization but it's actually a nullity. It's a void because there's no zeal behind it, that zeal the ethics is now gone. And so this is the basis of Weber's ideas about rationalization bureaucratization, where increasingly you do things based on quantifiable ideas about efficiency growth and where the zeal is to make things more and more rational and depersonalize them. In that process, we have lost the essence of human empathy and there is this disenchantment that we see when we look around in society. Of course, Weber gives, he is a, at the end of the day, he is a scholar and he is not an ideologist, so he is not saying that this religion is better or this spirit is better, or capitalism is better or something else is better. He is saying that we just, he wants to understand things. He wants to understand social change. He's not pushing and saying, this is better than this. So in the spirit of being a scholar, he says that we should continue studying how these belief systems ideologies, whether religious or secular, how do these belief systems shape institutions over time? And he says that we should perhaps avoid both purely economic materialistic explanations, which is what Marx is doing, or purely ideological belief system based explanations, because real history probably involves both. So this is the caveat that Weber ends with. Now so what is a key takeaway from Weber? The ideas behind the capitalism. What are those ideologies? Duty calling, asceticism, frugality, investment, continuous improvement in the surge of continuous growth. But then once capitalism took root it outgrew all of these ethics and has taken on the character of a sport, it has become an iron cage centralist without spirit. And now I would like to end this by giving you a couple of exercises where I want you to think about how all this relates to us. So I want you to look at your own society in which you are based and look at your own history, the history of your society, and I want you to look at it from both Marxist's perspective and Weber's perspective. So look at it from Marx's historical materialism perspective, where you look at the economic instruments, the relations of production, the modes of production and how that impacted the views and the philosophies. But also look at it from the other way around how views and philosophies are traditionalist or are supporting capitalism. I also want you to do a thought exercise to look at your own society again, and to see, can you identify the spirit of your society, just like Weber did. He identified the spirit of capitalism because that was the dominant system. And even to today, capitalism is the dominant system. But I want you to be more specific in your own specific district society that you are based in. What is the spirit? Is it exactly the same spirit as what Weber says, or is it more complex. What is that spirit? I want you to identify it. And with that, we lend this module on Marx and Weber.
+
+💾 Saved as: 28_The_Degeneration_of_Ethic.txt
+
+🚀 Processing Lecture 9: 2.9 Handout for Module 2
+🧪 Trying to click index: 8
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@ea007aaaf9f242eaa3442f1b7663b0c8/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@95fc29820267472187e6854fa3d85471
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+⚠️ Transcript NOT loaded in this iframe
+
+⚠️ FALLBACK TRIGGERED: 2.9 Handout for Module 2
+
+📄 Lecture Content:
+
+devmrinal
+Course
+Progress
+Dates
+Discussion
+Syllabus
+Schedule & Grading
+Module 2: In Search of a Universal Theory
+2.1 Economic and Philosophic Manuscripts of 1844
+, Incomplete
+2.2 Manifesto of the Communist Party, 1848
+, Incomplete
+2.3 The Downfall of Capitalism
+, Incomplete
+2.4 Aims of Communism
+, Incomplete
+2.5 Ehrenreich's Ideologies
+, Incomplete
+2.6 Max Weber Ideologies
+, Incomplete
+2.7 Capitalism
+, Incomplete
+2.8 The Degeneration of Ethic
+, Incomplete
+2.9 Handout for Module 2
+, Incomplete
+2.9.1 Handout for Module 2
+, Incomplete unit
+2.10 Learning Interludes
+, Incomplete
+2.11 Discussion Forum
+, Completed
+2.12 Continuous Learning Assessment - Instructions
+, Incomplete
+2.13 Continuous Learning Assessment - 2 (15 Questions)
+Timed Exam
+, Completed
+2.9.1 Handout for Module 2
+Level 2 headings may be created by course providers in the future.
+Bookmark this page
+Previous
+Next
+© IIMBx. All rights reserved except where noted.
+Privacy Policy
+Terms of Service
+Honor Code
+
+💾 Saved as: FAILED_29_Handout_for_Module_2.txt
+
+🚀 Processing Lecture 10: 2.10 Learning Interludes
+🧪 Trying to click index: 9
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@da83b4463cef4359a6669359bc90e0b8/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@fcdf8857332a443093d9d0e5a198ea6c
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+⚠️ Transcript NOT loaded in this iframe
+
+⚠️ FALLBACK TRIGGERED: 2.10 Learning Interludes
+
+📄 Lecture Content:
+
+devmrinal
+Course
+Progress
+Dates
+Discussion
+Syllabus
+Schedule & Grading
+Module 2: In Search of a Universal Theory
+2.1 Economic and Philosophic Manuscripts of 1844
+, Incomplete
+2.2 Manifesto of the Communist Party, 1848
+, Incomplete
+2.3 The Downfall of Capitalism
+, Incomplete
+2.4 Aims of Communism
+, Incomplete
+2.5 Ehrenreich's Ideologies
+, Incomplete
+2.6 Max Weber Ideologies
+, Incomplete
+2.7 Capitalism
+, Incomplete
+2.8 The Degeneration of Ethic
+, Incomplete
+2.9 Handout for Module 2
+, Incomplete
+2.10 Learning Interludes
+, Incomplete
+2.10.1 Game Show
+, Completed unit
+2.10.2 Match it
+, Incomplete unit
+2.10.3 MCQ
+, Incomplete unit
+2.11 Discussion Forum
+, Completed
+2.12 Continuous Learning Assessment - Instructions
+, Incomplete
+2.13 Continuous Learning Assessment - 2 (15 Questions)
+Timed Exam
+, Completed
+2.10.1 Game Show
+Level 2 headings may be created by course providers in the future.
+Bookmark this page
+Previous
+Next
+© IIMBx. All rights reserved except where noted.
+Privacy Policy
+Terms of Service
+Honor Code
+
+💾 Saved as: FAILED_210_Learning_Interludes.txt
+
+🚀 Processing Lecture 11: 2.11 Discussion Forum
+🧪 Trying to click index: 10
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@fff09c7842ee41ef93d0f00231939272/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@c1d3d0c0070746e5a242151c7b1307ce
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+⚠️ Transcript NOT loaded in this iframe
+
+⚠️ FALLBACK TRIGGERED: 2.11 Discussion Forum
+
+📄 Lecture Content:
+
+devmrinal
+Course
+Progress
+Dates
+Discussion
+Syllabus
+Schedule & Grading
+Module 2: In Search of a Universal Theory
+2.1 Economic and Philosophic Manuscripts of 1844
+, Incomplete
+2.2 Manifesto of the Communist Party, 1848
+, Incomplete
+2.3 The Downfall of Capitalism
+, Incomplete
+2.4 Aims of Communism
+, Incomplete
+2.5 Ehrenreich's Ideologies
+, Incomplete
+2.6 Max Weber Ideologies
+, Incomplete
+2.7 Capitalism
+, Incomplete
+2.8 The Degeneration of Ethic
+, Incomplete
+2.9 Handout for Module 2
+, Incomplete
+2.10 Learning Interludes
+, Incomplete
+2.11 Discussion Forum
+, Completed
+2.11.1 Discussion Forum
+, Completed unit
+2.12 Continuous Learning Assessment - Instructions
+, Incomplete
+2.13 Continuous Learning Assessment - 2 (15 Questions)
+Timed Exam
+, Completed
+2.11.1 Discussion Forum
+Level 2 headings may be created by course providers in the future.
+Bookmark this page
+Previous
+Next
+© IIMBx. All rights reserved except where noted.
+Privacy Policy
+Terms of Service
+Honor Code
+
+💾 Saved as: FAILED_211_Discussion_Forum.txt
+
+🚀 Processing Lecture 12: 2.12 Continuous Learning Assessment - Instructions
+🧪 Trying to click index: 11
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@ef3ce5bff901488098b1e776576967f7/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@268ed03d860e4b64855bcc5ab540c3b2
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+⚠️ Transcript NOT loaded in this iframe
+
+⚠️ FALLBACK TRIGGERED: 2.12 Continuous Learning Assessment - Instructions
+
+📄 Lecture Content:
+
+devmrinal
+Course
+Progress
+Dates
+Discussion
+Syllabus
+Schedule & Grading
+Module 2: In Search of a Universal Theory
+2.1 Economic and Philosophic Manuscripts of 1844
+, Incomplete
+2.2 Manifesto of the Communist Party, 1848
+, Incomplete
+2.3 The Downfall of Capitalism
+, Incomplete
+2.4 Aims of Communism
+, Incomplete
+2.5 Ehrenreich's Ideologies
+, Incomplete
+2.6 Max Weber Ideologies
+, Incomplete
+2.7 Capitalism
+, Incomplete
+2.8 The Degeneration of Ethic
+, Incomplete
+2.9 Handout for Module 2
+, Incomplete
+2.10 Learning Interludes
+, Incomplete
+2.11 Discussion Forum
+, Completed
+2.12 Continuous Learning Assessment - Instructions
+, Incomplete
+2.12.1 CLA - Instructions
+, Incomplete unit
+2.13 Continuous Learning Assessment - 2 (15 Questions)
+Timed Exam
+, Completed
+2.12.1 CLA - Instructions
+Level 2 headings may be created by course providers in the future.
+Bookmark this page
+Previous
+Next
+© IIMBx. All rights reserved except where noted.
+Privacy Policy
+Terms of Service
+Honor Code
+
+💾 Saved as: FAILED_212_Continuous_Learning_Assessment_-_Instructions.txt
+
+🚀 Processing Lecture 13: 2.13 Continuous Learning Assessment - 2 (15 Questions)
+🧪 Trying to click index: 12
+✅ Lecture clicked!
+DEBUG → Current URL: https://apps.iimbx.edu.in/learning/course/course-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@sequential+block@6097a93398f14751a3ff414454cd9b23/block-v1:IIMBx+MD42x+BBA_DBE_B1_Mar-Jun-2026+type@vertical+block@9515134b8a034b08b9bb0f1a4c793b1d
+DEBUG → iframe count: 6
+🧪 Using iframe index: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+DEBUG → transcript elements: 0
+⚠️ Transcript NOT loaded in this iframe
+
+⚠️ FALLBACK TRIGGERED: 2.13 Continuous Learning Assessment - 2 (15 Questions)
+
+📄 Lecture Content:
+
+devmrinal
+Course
+Progress
+Dates
+Discussion
+Syllabus
+Schedule & Grading
+Module 2: In Search of a Universal Theory
+2.1 Economic and Philosophic Manuscripts of 1844
+, Incomplete
+2.2 Manifesto of the Communist Party, 1848
+, Incomplete
+2.3 The Downfall of Capitalism
+, Incomplete
+2.4 Aims of Communism
+, Incomplete
+2.5 Ehrenreich's Ideologies
+, Incomplete
+2.6 Max Weber Ideologies
+, Incomplete
+2.7 Capitalism
+, Incomplete
+2.8 The Degeneration of Ethic
+, Incomplete
+2.9 Handout for Module 2
+, Incomplete
+2.10 Learning Interludes
+, Incomplete
+2.11 Discussion Forum
+, Completed
+2.12 Continuous Learning Assessment - Instructions
+, Incomplete
+2.13 Continuous Learning Assessment - 2 (15 Questions)
+Timed Exam
+, Completed
+2.13.1 CLA - 2
+, Completed unit
+2.13.1 CLA - 2
+Level 2 headings may be created by course providers in the future.
+Bookmark this page
+Previous
+Next
+© IIMBx. All rights reserved except where noted.
+Privacy Policy
+Terms of Service
+Honor Code
+
+💾 Saved as: FAILED_213_Continuous_Learning_Assessment_-_2_(15_Questions).txt
+Press Enter to close...
+
+
+
+8. Main limitation (current stage)
+Only top-level lectures handled
+Nested/sub-units detected (Sub-units found: 2) but ignored
+❌ This is why some content is still missing
+9. Code quality observation
+Slightly heavy but controlled complexity
+Debugs are useful but can be trimmed later
+Architecture is now modular enough to extend
