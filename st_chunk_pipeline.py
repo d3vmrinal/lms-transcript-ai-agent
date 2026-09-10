@@ -24,6 +24,8 @@ chunk_sizes = []
 
 small_chunks = []
 
+large_chunks = []
+
 
 def split_into_sentences(text):
 
@@ -79,7 +81,35 @@ def chunk_sentences(sentences):
 
         chunks.append(" ".join(current_chunk))
 
-    return chunks
+
+    # ==================================
+    # MERGE TINY TRAILING CHUNKS
+    # ==================================
+
+    merged_chunks = []
+
+    for chunk in chunks:
+
+        chunk_word_count = len(
+            chunk.split()
+        )
+
+        if (
+            chunk_word_count < 250
+            and len(merged_chunks) > 0
+        ):
+
+            merged_chunks[-1] += (
+                " " + chunk
+            )
+
+        else:
+
+            merged_chunks.append(
+                chunk
+            )
+
+    return merged_chunks
 
 
 for root, dirs, files in os.walk(INPUT_FOLDER):
@@ -156,6 +186,17 @@ for root, dirs, files in os.walk(INPUT_FOLDER):
 
                         "chunk_word_count": chunk_word_count
                     })
+                
+                if chunk_word_count > 1200:
+
+                    large_chunks.append({
+
+                        "lecture_file": file,
+
+                        "chunk_index": index + 1,
+
+                        "chunk_word_count": chunk_word_count
+                    })
 
                 chunk_data = {
 
@@ -166,6 +207,8 @@ for root, dirs, files in os.walk(INPUT_FOLDER):
                     "total_chunks": total_chunks,
 
                     "chunk_word_count": chunk_word_count,
+                    "is_micro_lecture":
+                    len(cleaned_content.split()) < 250,
                     
                     "chunk_char_count": len(chunk_text),
 
@@ -324,6 +367,23 @@ if len(small_chunks) == 0:
 else:
 
     for chunk in small_chunks:
+
+        print(
+            f"{chunk['lecture_file']} | "
+            f"Chunk {chunk['chunk_index']} | "
+            f"{chunk['chunk_word_count']} words"
+        )
+
+print("\n🚨 LARGE CHUNKS (>1200 WORDS)")
+print("========================")
+
+if len(large_chunks) == 0:
+
+    print("✅ No oversized chunks")
+
+else:
+
+    for chunk in large_chunks:
 
         print(
             f"{chunk['lecture_file']} | "

@@ -12,7 +12,7 @@ import chromadb
 
 EMBEDDINGS_FOLDER = "embeddings"
 
-VECTOR_DB_FOLDER = "vector_db"
+VECTOR_DB_FOLDER = r"C:\LMS_VectorDB"
 
 COLLECTION_NAME = "lms_knowledge_base"
 
@@ -167,6 +167,14 @@ for root, _, files in os.walk(
                         chunk.get(
                             "source_type",
                             ""
+                        )
+                    ),
+                    
+                    "chunk_word_count":
+                    int(
+                        chunk.get(
+                            "chunk_word_count",
+                            0
                         )
                     )
                 }

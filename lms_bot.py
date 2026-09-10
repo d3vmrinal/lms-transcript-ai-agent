@@ -167,7 +167,7 @@ def run():
             print(f"{i+1}. {text}")
 
         # =============================
-        # 🔴 DEBUG BLOCK (YOU ASKED HERE)
+        # 🔴 DEBUG BLOCK
         # =============================
 
         choice = int(input("\nSelect module: "))

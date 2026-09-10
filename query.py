@@ -55,11 +55,30 @@ print("=" * 60)
 print("TOP RESULTS")
 print("=" * 60)
 
-documents = results["documents"][0]
+documents = results.get(
+    "documents",
+    [[]]
+)[0]
 
-metadatas = results["metadatas"][0]
+metadatas = results.get(
+    "metadatas",
+    [[]]
+)[0]
 
-distances = results["distances"][0]
+distances = results.get(
+    "distances",
+    [[]]
+)[0]
+
+if not documents:
+
+    print()
+
+    print(
+        "❌ No results found."
+    )
+
+    exit()
 
 for i in range(
     len(documents)
@@ -106,19 +125,101 @@ for i in range(
             ""
         )
     )
+    
+    print(
+        "Lecture ID:",
+        metadatas[i].get(
+            "lecture_id",
+            ""
+        )
+    )
+
+    print(
+        "Chunk Words:",
+        metadatas[i].get(
+            "chunk_word_count",
+            ""
+        )
+    )
+
+    distance = distances[i]
 
     print(
         "Distance:",
         round(
-            distances[i],
+            distance,
             4
         )
     )
 
     print()
 
+    preview = documents[i][:400]
+
     print(
-        documents[i][:1000]
+        preview
     )
 
+    if len(
+        documents[i]
+    ) > 400:
+
+        print(
+            "\n...[TRUNCATED]"
+        )
+
     print()
+
+print()
+
+print("=" * 60)
+print("📊 QUERY SUMMARY")
+print("=" * 60)
+
+best_match = metadatas[0]
+
+best_distance = round(
+    distances[0],
+    4
+)
+
+print(
+    "Question:",
+    question
+)
+
+print(
+    "Results Returned:",
+    len(documents)
+)
+
+print(
+    "Best Match Lecture:",
+    best_match.get(
+        "lecture_title",
+        ""
+    )
+)
+
+print(
+    "Best Match ID:",
+    best_match.get(
+        "lecture_id",
+        ""
+    )
+)
+
+print(
+    "Best Distance:",
+    best_distance
+)
+
+print(
+    "Embedding Model:",
+    MODEL_NAME
+)
+
+print(
+    "Top K:",
+    TOP_K
+)

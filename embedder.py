@@ -9,7 +9,7 @@ INPUT_FOLDER = "st_chunked_output"
 
 OUTPUT_FOLDER = "embeddings"
 
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "BAAI/bge-base-en-v1.5"
 
 
 os.makedirs(
@@ -90,7 +90,8 @@ for root, dirs, files in os.walk(INPUT_FOLDER):
                     continue
 
                 embedding = model.encode(
-                    chunk_text
+                    chunk_text,
+                    normalize_embeddings=True
                 ).tolist()
 
                 word_count = chunk.get(
@@ -205,8 +206,7 @@ for root, dirs, files in os.walk(INPUT_FOLDER):
                 "embedding_model":
                 EMBEDDING_MODEL,
 
-                "embedding_dimension":
-                384,
+                "embedding_dimension": len(embedding),
 
                 "embedded_at":
                 datetime.now().isoformat(),
@@ -314,8 +314,7 @@ report_data = {
     "embedding_model":
     EMBEDDING_MODEL,
 
-    "embedding_dimension":
-    384,
+    "embedding_dimension": len(embedding),
 
     "largest_chunk_words":
     max(chunk_sizes) if chunk_sizes else 0,
