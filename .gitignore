@@ -56,4 +56,6 @@ temp_terminal_logs.txt
 .DS_Store
 Thumbs.db
 .vscode/
-Notes/
+Notes
+Analysis.txt
+*logs*.txt
