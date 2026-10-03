@@ -1,3 +1,4 @@
+import os
 import time
 import chromadb
 import ollama
@@ -27,7 +28,9 @@ embedder = SentenceTransformer(MODEL_NAME)
 
 print("🗄️ Connecting to Chroma...")
 
-client = chromadb.PersistentClient(path=r"C:\LMS_VectorDB")
+CHROMA_PATH = os.getenv("CHROMA_PATH", os.path.expanduser("~/LMS_VectorDB"))
+
+client = chromadb.PersistentClient(path=CHROMA_PATH)
 
 collection = client.get_collection(COLLECTION_NAME)
 
@@ -35,7 +38,7 @@ print("✅ RAG Ready")
 
 import json
 
-with open("term_mapping.json", "r") as f:
+with open("term_mapping.json", "r", encoding="utf-8") as f:
 
     TERM_MAPPING = json.load(f)
 
@@ -204,206 +207,235 @@ while True:
 
     selected_course = course_input if course_input else None
 
+    selected_course = course_input if course_input else None
+
     selected_module = module_input if module_input else None
 
-    print()
-
-    question = input("Ask a question (/bye to quit): ")
-
-    if question.lower() == "/bye":
-
-        print("\n👋 Goodbye")
-
-        break
-
-    print()
-
-    start_time = time.time()
-
-    scope_changed = (
-        selected_course != current_course or selected_module != current_module
-    )
-
-    if (not scope_changed) and should_use_memory(question, current_context):
-
-        print("🧠 Using Cached Lecture")
-
-        context = current_context
-
-        sources = current_sources
-
-        best_lecture_id = current_lecture_id
-
-    else:
-
-        question_embedding = embedder.encode(question).tolist()
-
-        where_filter = build_filter(selected_course, selected_module, available_courses)
-
-        query_kwargs = {"query_embeddings": [question_embedding], "n_results": TOP_K}
-
-        if where_filter:
-
-            query_kwargs["where"] = where_filter
-
-        results = collection.query(**query_kwargs)
-
-        print("\nTop Retrieval Results:\n")
-
-        for i in range(len(results["metadatas"][0])):
-
-            meta = results["metadatas"][0][i]
-
-            print(
-                f"{i+1}.",
-                meta["lecture_title"],
-                "|",
-                meta["lecture_id"],
-                "| Distance:",
-                round(results["distances"][0][i], 4),
-            )
-
-        documents = results["documents"][0]
-
-        metadatas = results["metadatas"][0]
-
-        distances = results["distances"][0]
-
-        from collections import defaultdict
-
-        lecture_scores = defaultdict(float)
-
-        lecture_meta = {}
-
-        for meta, dist in zip(metadatas, distances):
-
-            lecture_scores[meta["lecture_id"]] += 2 - dist
-
-            lecture_meta[meta["lecture_id"]] = meta
-
-        if not lecture_scores:
-
-            print(
-                "\n❌ No matching content found for this scope. Try broadening your course/module selection.\n"
-            )
-
-            continue
-
-        best_lecture_id = max(lecture_scores, key=lecture_scores.get)
-
-        print(f"\n📚 Best Lecture: {best_lecture_id}")
-
-        lecture_results = collection.get(where={"lecture_id": best_lecture_id})
-
-        lecture_chunks = sorted(
-            zip(lecture_results["documents"], lecture_results["metadatas"]),
-            key=lambda x: x[1]["chunk_index"],
-        )
-
-        context = ""
-
-        sources = []
-
-        for doc, meta in lecture_chunks:
-
-            context += "\n\n" + doc
-
-            sources.append(
-                {
-                    "lecture": meta["lecture_title"],
-                    "lecture_id": meta["lecture_id"],
-                    "chunk": meta["chunk_index"],
-                    "distance": "Expanded",
-                }
-            )
-
-        current_context = context
-
-        current_sources = sources
-
-        current_lecture_id = best_lecture_id
-
-        current_course = selected_course
-
-        current_module = selected_module
-
-    prompt = f"""
-    You are an academic tutor answering questions from LMS lecture transcripts.
-
-    Use ONLY the transcript below.
-
-    Instructions:
-
-    - Answer directly.
-    - Explain concepts in simple language.
-    - If multiple points are mentioned, use bullet points.
-    - If the transcript gives a definition, quote it as closely as possible.
-    - Do not add facts that are not supported by the transcript.
-    - If the transcript partially answers the question, say what is available.
-    - Only reply "I could not find the answer in the LMS knowledge base." if the transcript truly contains no relevant information.
-    - If the question asks for a "short", "brief", "small", or "quick" answer, respond in 3-5 sentences maximum, no bullet points.
-    - If the question does not request brevity, answer in full detail as instructed above.
-
-    Question:
-    {question}
-
-    Transcript:
-    {context}
-
-    Answer:
-    """
-
-    print("🤖 Generating answer...\n")
-
-    response = ollama.chat(
-        model=OLLAMA_MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        keep_alive="30m",
-    )
-
-    answer = response["message"]["content"]
-
-    elapsed = round(time.time() - start_time, 2)
-
-    context_size = len(context)
-
-    print("=" * 70)
-    print("📚 ANSWER")
-    print("=" * 70)
-
-    print()
-    print(answer)
-    print()
-
-    print("=" * 70)
-    print("📖 SOURCES")
-    print("=" * 70)
-
-    for i, source in enumerate(sources):
+    while True:
 
         print()
 
-        print(f"{i+1}.", source["lecture"])
+        question = input(
+            "Ask a question (/bye to quit, /new to change term/course/module): "
+        )
 
-        print("   Lecture ID:", source["lecture_id"])
+        if question.lower() == "/bye":
 
-        print("   Chunk:", source["chunk"])
+            print("\n👋 Goodbye")
 
-        print("   Distance:", source["distance"])
+            exit()
 
-    print()
-    print("=" * 70)
-    print("📊 RAG ANALYTICS")
-    print("=" * 70)
+        if question.lower() == "/new":
 
-    print("Question:", question)
+            break
 
-    print("Chunks Retrieved:", 1)
+        print()
 
-    print("Model:", OLLAMA_MODEL)
+        start_time = time.time()
 
-    print("Embedding Model:", MODEL_NAME)
+        scope_changed = (
+            selected_course != current_course or selected_module != current_module
+        )
 
-    print("Context Size:", context_size, "chars")
+        if (not scope_changed) and should_use_memory(question, current_context):
 
-    print("Response Time:", f"{elapsed}s")
+            print("🧠 Using Cached Lecture")
+
+            context = current_context
+
+            sources = current_sources
+
+            best_lecture_id = current_lecture_id
+
+        else:
+
+            question_embedding = embedder.encode(question).tolist()
+
+            where_filter = build_filter(
+                selected_course, selected_module, available_courses
+            )
+
+            query_kwargs = {
+                "query_embeddings": [question_embedding],
+                "n_results": TOP_K,
+            }
+
+            if where_filter:
+
+                query_kwargs["where"] = where_filter
+
+            results = collection.query(**query_kwargs)
+
+            print("\nTop Retrieval Results:\n")
+
+            for i in range(len(results["metadatas"][0])):
+
+                meta = results["metadatas"][0][i]
+
+                print(
+                    f"{i+1}.",
+                    meta["lecture_title"],
+                    "|",
+                    meta["lecture_id"],
+                    "| Distance:",
+                    round(results["distances"][0][i], 4),
+                )
+
+            documents = results["documents"][0]
+
+            metadatas = results["metadatas"][0]
+
+            distances = results["distances"][0]
+
+            from collections import defaultdict
+
+            lecture_scores = defaultdict(float)
+
+            lecture_meta = {}
+
+            for meta, dist in zip(metadatas, distances):
+
+                lecture_scores[meta["lecture_id"]] += 2 - dist
+
+                lecture_meta[meta["lecture_id"]] = meta
+
+            if not lecture_scores:
+
+                print(
+                    "\n❌ No matching content found for this scope. Try broadening your course/module selection.\n"
+                )
+
+                continue
+
+            best_lecture_id = max(lecture_scores, key=lecture_scores.get)
+
+            print(f"\n📚 Best Lecture: {best_lecture_id}")
+
+            lecture_results = collection.get(where={"lecture_id": best_lecture_id})
+
+            lecture_chunks = sorted(
+                zip(lecture_results["documents"], lecture_results["metadatas"]),
+                key=lambda x: x[1]["chunk_index"],
+            )
+
+            context = ""
+
+            sources = []
+
+            for doc, meta in lecture_chunks:
+
+                context += "\n\n" + doc
+
+                sources.append(
+                    {
+                        "lecture": meta["lecture_title"],
+                        "lecture_id": meta["lecture_id"],
+                        "chunk": meta["chunk_index"],
+                        "distance": "Expanded",
+                    }
+                )
+
+            current_context = context
+
+            current_sources = sources
+
+            current_lecture_id = best_lecture_id
+
+            current_course = selected_course
+
+            current_module = selected_module
+
+            chat_history = []
+
+        history_text = ""
+
+        for turn in chat_history[-5:]:
+
+            history_text += f"\nStudent: {turn['question']}\nTutor: {turn['answer']}\n"
+
+        prompt = f"""
+        You are an academic tutor answering questions from LMS lecture transcripts.
+
+        Use ONLY the transcript below as your source of facts. You may use the conversation history to understand context, follow-up references, and tone — but not as a source of new facts.
+
+        Instructions:
+
+        - Answer directly.
+        - Explain concepts in simple language.
+        - If multiple points are mentioned, use bullet points.
+        - If the transcript gives a definition, quote it as closely as possible.
+        - Do not add facts that are not supported by the transcript.
+        - If the transcript partially answers the question, say what is available.
+        - Only reply "I could not find the answer in the LMS knowledge base." if the transcript truly contains no relevant information.
+        - If the question asks for a "short", "brief", "small", or "quick" answer, respond in 3-5 sentences maximum, no bullet points.
+        - If the question does not request brevity, answer in full detail as instructed above.
+        - If the question refers back to something discussed earlier (e.g. "that", "it", "the second point"), use the conversation history to understand what is being referenced.
+
+        Conversation so far:
+        {history_text}
+
+        Transcript:
+        {context}
+
+        Current Question:
+        {question}
+
+        Answer:
+        """
+
+        print("🤖 Generating answer...\n")
+
+        response = ollama.chat(
+            model=OLLAMA_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            keep_alive="30m",
+        )
+
+        answer = response["message"]["content"]
+
+        chat_history.append({"question": question, "answer": answer})
+
+        elapsed = round(time.time() - start_time, 2)
+
+        context_size = len(context)
+
+        print("=" * 70)
+        print("📚 ANSWER")
+        print("=" * 70)
+
+        print()
+        print(answer)
+        print()
+
+        print("=" * 70)
+        print("📖 SOURCES")
+        print("=" * 70)
+
+        for i, source in enumerate(sources):
+
+            print()
+
+            print(f"{i+1}.", source["lecture"])
+
+            print("   Lecture ID:", source["lecture_id"])
+
+            print("   Chunk:", source["chunk"])
+
+            print("   Distance:", source["distance"])
+
+        print()
+        print("=" * 70)
+        print("📊 RAG ANALYTICS")
+        print("=" * 70)
+
+        print("Question:", question)
+
+        print("Chunks Retrieved:", 1)
+
+        print("Model:", OLLAMA_MODEL)
+
+        print("Embedding Model:", MODEL_NAME)
+
+        print("Context Size:", context_size, "chars")
+
+        print("Response Time:", f"{elapsed}s")

@@ -1,0 +1,51 @@
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> python --version
+Python 3.14.4
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> ollama list
+NAME            ID              SIZE      MODIFIED    
+qwen2.5:3b      357c53fb659c    1.9 GB    2 weeks ago    
+qwen2.5:1.5b    65ec06548149    986 MB    2 weeks ago    
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> pip show chromadb sentence-transformers playwright ollama
+Name: chromadb
+Version: 1.5.9
+Summary: Chroma.
+Home-page: https://github.com/chroma-core/chroma
+Author: 
+Author-email: Jeff Huber <jeff@trychroma.com>, Anton Troynikov <anton@trychroma.com>
+License: 
+Location: C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+Requires: bcrypt, build, grpcio, httpx, importlib-resources, jsonschema, kubernetes, mmh3, numpy, onnxruntime, opentelemetry-api, opentelemetry-exporter-otlp-proto-grpc, opentelemetry-sdk, orjson, overrides, pybase64, pydantic, pydantic-settings, pypika, pyyaml, rich, tenacity, tokenizers, tqdm, typer, typing-extensions, uvicorn
+Required-by: 
+---
+Name: sentence-transformers
+Version: 5.5.1
+Summary: Embeddings, Retrieval, and Reranking
+Home-page: https://www.SBERT.net
+Author: 
+Author-email: Nils Reimers <info@nils-reimers.de>, Tom Aarsen <tom.aarsen@huggingface.co>
+License: Apache 2.0
+Location: C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+Requires: huggingface-hub, numpy, scikit-learn, scipy, torch, tqdm, transformers, typing_extensions
+Required-by: 
+---
+Name: playwright
+Version: 1.58.0
+Summary: A high-level API to automate web browsers
+Home-page: https://github.com/Microsoft/playwright-python
+Author: Microsoft Corporation
+Author-email: 
+License-Expression: Apache-2.0
+Location: C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+Requires: greenlet, pyee
+Required-by: 
+---
+Name: ollama
+Version: 0.6.2
+Summary: The official Python client for Ollama.
+Home-page: https://ollama.com
+Author: 
+Author-email: hello@ollama.com
+License-Expression: MIT
+Location: C:\Users\dev\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+Requires: httpx, pydantic
+Required-by: 
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent>

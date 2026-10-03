@@ -10,44 +10,57 @@ DEBUG = False
 # 🔥 CONTENT CLASSIFIER
 # =============================
 
+
 def classify_content(title):
 
     t = title.lower()
 
-    if any(x in t for x in [
-        "quiz",
-        "assessment",
-        "mcq",
-        "cla",
-        "questions",
-    ]):
+    if any(
+        x in t
+        for x in [
+            "quiz",
+            "assessment",
+            "mcq",
+            "cla",
+            "questions",
+        ]
+    ):
         return "QUIZ"
 
-    if any(x in t for x in [
-        "discussion",
-        "forum",
-        "instructions",
-    ]):
+    if any(
+        x in t
+        for x in [
+            "discussion",
+            "forum",
+            "instructions",
+        ]
+    ):
         return "FORUM"
 
-    if any(x in t for x in [
-        "handout",
-        "pdf",
-        "slides",
-        "notes",
-        "pre-read",
-        "pre-reads",
-        "reading",
-    ]):
+    if any(
+        x in t
+        for x in [
+            "handout",
+            "pdf",
+            "slides",
+            "notes",
+            "pre-read",
+            "pre-reads",
+            "reading",
+        ]
+    ):
         return "HANDOUT"
 
-    if any(x in t for x in [
-        "game",
-        "match",
-        "activity",
-        "exercise",
-        "interlude",
-    ]):
+    if any(
+        x in t
+        for x in [
+            "game",
+            "match",
+            "activity",
+            "exercise",
+            "interlude",
+        ]
+    ):
         return "ACTIVITY"
 
     if "welcome" in t:
@@ -55,9 +68,11 @@ def classify_content(title):
 
     return "VIDEO"
 
+
 def transcript_expected(content_type):
 
     return content_type == "VIDEO"
+
 
 def normalize_status(status):
 
@@ -70,6 +85,7 @@ def normalize_status(status):
     }
 
     return mapping.get(status, "UNKNOWN")
+
 
 def save_failure_log(failure_data):
 
@@ -91,6 +107,7 @@ def save_failure_log(failure_data):
     with open(log_path, "w", encoding="utf-8") as f:
         json.dump(existing_logs, f, indent=4)
 
+
 BASE_DIR = "output"
 os.makedirs(BASE_DIR, exist_ok=True)
 
@@ -100,7 +117,7 @@ def run():
 
         browser = p.chromium.launch_persistent_context(
             user_data_dir="user_data",
-            executable_path=r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+            channel="chrome",
             headless=False,
         )
 
@@ -174,7 +191,7 @@ def run():
         selected_module = module_list[choice - 1][0]
 
         module_trigger = modules.nth(selected_module)
-        
+
         expand_button = module_trigger.locator("button").first
 
         print("🧪 Scrolling module into view...")
@@ -244,15 +261,15 @@ def run():
         lecture_status = {}
 
         audit_tree = {}
-        
+
         failed_lectures = []
-        
+
         seen_hashes = set()
-        
+
         os.makedirs("logs", exist_ok=True)
-        
+
         content_lengths = []
-        
+
         content_lengths = []
 
         lecture_list = []
@@ -271,7 +288,7 @@ def run():
                     lecture_list.append((i, text))
 
                     expected_lectures.append(text)
-                    
+
                     audit_tree[text] = []
 
             except:
@@ -369,20 +386,24 @@ def run():
 
                 if not expanded:
                     print("❌ Module did NOT expand — skipping lecture")
-                    
-                    failed_lectures.append({
-                        "lecture": lecture_name,
-                        "reason": "MODULE_NOT_EXPANDED",
-                    })
-                    
-                    save_failure_log({
-                        "course": selected_course_name,
-                        "module": module_list[selected_module][1],
-                        "lecture": lecture_name,
-                        "reason": "MODULE_NOT_EXPANDED",
-                        "timestamp": datetime.now().isoformat()
-                    })
-                    
+
+                    failed_lectures.append(
+                        {
+                            "lecture": lecture_name,
+                            "reason": "MODULE_NOT_EXPANDED",
+                        }
+                    )
+
+                    save_failure_log(
+                        {
+                            "course": selected_course_name,
+                            "module": module_list[selected_module][1],
+                            "lecture": lecture_name,
+                            "reason": "MODULE_NOT_EXPANDED",
+                            "timestamp": datetime.now().isoformat(),
+                        }
+                    )
+
                     continue
 
                 page.wait_for_timeout(2000)
@@ -407,20 +428,24 @@ def run():
 
             if lecture_links.count() == 0:
                 print("❌ NO LECTURES FOUND AFTER REFRESH — skipping safely")
-                
-                failed_lectures.append({
-                    "lecture": lecture_name,
-                    "reason": "LECTURES_NOT_VISIBLE",
-                })
-                
-                save_failure_log({
-                    "course": selected_course_name,
-                    "module": module_list[selected_module][1],
-                    "lecture": lecture_name,
-                    "reason": "LECTURES_NOT_VISIBLE",
-                    "timestamp": datetime.now().isoformat()
-                })
-                
+
+                failed_lectures.append(
+                    {
+                        "lecture": lecture_name,
+                        "reason": "LECTURES_NOT_VISIBLE",
+                    }
+                )
+
+                save_failure_log(
+                    {
+                        "course": selected_course_name,
+                        "module": module_list[selected_module][1],
+                        "lecture": lecture_name,
+                        "reason": "LECTURES_NOT_VISIBLE",
+                        "timestamp": datetime.now().isoformat(),
+                    }
+                )
+
                 continue
 
             link = lecture_links.nth(original_index)
@@ -454,20 +479,24 @@ def run():
 
             if not clicked:
                 print("❌ ALL CLICK METHODS FAILED — skipping")
-                
-                failed_lectures.append({
-                    "lecture": lecture_name,
-                    "reason": "LECTURE_CLICK_FAILED",
-                })
-                
-                save_failure_log({
-                    "course": selected_course_name,
-                    "module": module_list[selected_module][1],
-                    "lecture": lecture_name,
-                    "reason": "LECTURE_CLICK_FAILED",
-                    "timestamp": datetime.now().isoformat()
-                })
-                
+
+                failed_lectures.append(
+                    {
+                        "lecture": lecture_name,
+                        "reason": "LECTURE_CLICK_FAILED",
+                    }
+                )
+
+                save_failure_log(
+                    {
+                        "course": selected_course_name,
+                        "module": module_list[selected_module][1],
+                        "lecture": lecture_name,
+                        "reason": "LECTURE_CLICK_FAILED",
+                        "timestamp": datetime.now().isoformat(),
+                    }
+                )
+
                 continue
 
             page.wait_for_timeout(3000)
@@ -545,10 +574,10 @@ def run():
             print("\n🧪 Checking nested lectures via INNER BLOCKS...")
 
             if inner_blocks.count() > 1:
-                
+
                 if inner_blocks.count() == 1:
                     print("⚠️ Single inner block (treat as main lecture)")
-                
+
                 print(f"✅ Nested lectures detected: {inner_blocks.count()}")
 
                 for i in range(inner_blocks.count()):
@@ -751,7 +780,7 @@ def run():
 
                     if not found:
                         print("⚠️ NO transcript in sub lecture")
-                    
+
                         if len(sub_content.strip()) < 100:
 
                             sub_type = classify_content(sub_name)
@@ -816,7 +845,7 @@ def run():
                     os.makedirs(folder_path, exist_ok=True)
 
                     file_path = os.path.join(folder_path, f"{safe_sub}.json")
-                    
+
                     if os.path.exists(file_path):
                         print(f"⏭️ Already exists, skipping: {safe_sub}")
 
@@ -824,12 +853,10 @@ def run():
 
                         audit_tree.setdefault(lecture_name, [])
 
-                        audit_tree[lecture_name].append(
-                            (sub_name, "SKIPPED")
-                        )
+                        audit_tree[lecture_name].append((sub_name, "SKIPPED"))
 
                         continue
-                    
+
                     lecture_record = {
                         "title": sub_name,
                         "type": classify_content(sub_name),
@@ -839,14 +866,13 @@ def run():
                         "video_detected": transcript_expected(sub_type),
                         "iframe_attempts": iframe_count,
                     }
-                    
+
                     content_lengths.append(len(sub_content))
-                    
+
                     content_hash = None
 
-                    if (
-                        len(sub_content.strip()) >= 100
-                        and transcript_expected(sub_type)
+                    if len(sub_content.strip()) >= 100 and transcript_expected(
+                        sub_type
                     ):
 
                         content_hash = hashlib.md5(
@@ -861,9 +887,7 @@ def run():
 
                             audit_tree.setdefault(lecture_name, [])
 
-                            audit_tree[lecture_name].append(
-                                (sub_name, "DUPLICATE")
-                            )
+                            audit_tree[lecture_name].append((sub_name, "DUPLICATE"))
 
                             continue
 
@@ -872,43 +896,33 @@ def run():
                     data = {
                         "course": selected_course_name,
                         "module": module_list[selected_module][1],
-
                         "lecture": lecture_name,
                         "sublecture": sub_name,
-                        
                         "lecture_id": (
-                            selected_course_name
-                                .upper()
-                                .replace(" ", "_")
+                            selected_course_name.upper().replace(" ", "_")
                             + "__"
-                            + sub_name.split(" ")[0]
-                                .replace(".", "_")
+                            + sub_name.split(" ")[0].replace(".", "_")
                         ),
-
                         "type": lecture_record["type"],
                         "status": (
                             "SUCCESS"
                             if len(sub_content.strip()) >= 100
                             and transcript_expected(sub_type)
-
-                            else "NON_TRANSCRIPT"
-                            if not transcript_expected(sub_type)
-
-                            else "EMPTY"
+                            else (
+                                "NON_TRANSCRIPT"
+                                if not transcript_expected(sub_type)
+                                else "EMPTY"
+                            )
                         ),
-                        
                         "vectorizable": (
                             len(sub_content.strip()) >= 100
                             and transcript_expected(sub_type)
                         ),
-
                         "content_length": lecture_record["content_length"],
                         "has_transcript": lecture_record["has_transcript"],
-
                         "source_url": page.url,
                         "extracted_at": datetime.now().isoformat(),
                         "content_hash": content_hash,
-
                         "content": sub_content,
                     }
 
@@ -916,11 +930,11 @@ def run():
                         json.dump(data, f, indent=4, ensure_ascii=False)
 
                     print(f"💾 Saved JSON: {file_path}")
-                    
+
                     preview = sub_content[:100].replace("\n", " ")
 
                     print(f"📝 Preview: {preview}")
-                    
+
                     if len(sub_content.strip()) >= 100:
 
                         if sub_name not in lecture_status:
@@ -929,15 +943,11 @@ def run():
 
                             audit_tree.setdefault(lecture_name, [])
 
-                            existing_children = [
-                                x[0] for x in audit_tree[lecture_name]
-                            ]
+                            existing_children = [x[0] for x in audit_tree[lecture_name]]
 
                             if sub_name not in existing_children:
 
-                                audit_tree[lecture_name].append(
-                                    (sub_name, "SUCCESS")
-                                )
+                                audit_tree[lecture_name].append((sub_name, "SUCCESS"))
 
                 print("🔁 Returning using course base...")
 
@@ -1060,7 +1070,7 @@ def run():
 
                 if not found:
                     print("⚠️ NO transcript in main lecture")
-                    
+
                     if len(main_content.strip()) < 100:
 
                         main_type = classify_content(lecture_name)
@@ -1072,14 +1082,16 @@ def run():
                             lecture_status[lecture_name] = "EMPTY_WARNING"
 
                             audit_tree[lecture_name] = [(lecture_name, "EMPTY_WARNING")]
-                            #audit_tree.setdefault(lecture_name, [])
+                            # audit_tree.setdefault(lecture_name, [])
 
                         else:
 
                             lecture_status[lecture_name] = "NON_TRANSCRIPT"
 
-                            audit_tree[lecture_name] = [(lecture_name, "NON_TRANSCRIPT")]
-                            #audit_tree.setdefault(lecture_name, [])
+                            audit_tree[lecture_name] = [
+                                (lecture_name, "NON_TRANSCRIPT")
+                            ]
+                            # audit_tree.setdefault(lecture_name, [])
 
                 # 🔥 SAVE MAIN LECTURE
                 safe_course = (
@@ -1110,16 +1122,16 @@ def run():
                 os.makedirs(folder_path, exist_ok=True)
 
                 file_path = os.path.join(folder_path, f"{safe_lecture}.json")
-                
+
                 if os.path.exists(file_path):
                     print(f"⏭️ Already exists, skipping: {safe_lecture}")
 
                     lecture_status[lecture_name] = "SKIPPED"
                     audit_tree[lecture_name] = [(lecture_name, "SKIPPED")]
-                    #audit_tree.setdefault(lecture_name, [])
+                    # audit_tree.setdefault(lecture_name, [])
 
                     continue
-                    
+
                 lecture_record = {
                     "title": lecture_name,
                     "type": classify_content(lecture_name),
@@ -1128,18 +1140,13 @@ def run():
                     "has_transcript": len(main_content.strip()) >= 100,
                     "video_detected": transcript_expected(main_type),
                     "iframe_attempts": iframe_count,
-                }    
-                
+                }
+
                 content_hash = None
 
-                if (
-                    len(main_content.strip()) >= 100
-                    and transcript_expected(main_type)
-                ):
+                if len(main_content.strip()) >= 100 and transcript_expected(main_type):
 
-                    content_hash = hashlib.md5(
-                        main_content.encode("utf-8")
-                    ).hexdigest()
+                    content_hash = hashlib.md5(main_content.encode("utf-8")).hexdigest()
 
                     if content_hash in seen_hashes:
 
@@ -1147,55 +1154,42 @@ def run():
 
                         lecture_status[lecture_name] = "DUPLICATE"
 
-                        audit_tree[lecture_name] = [
-                            (lecture_name, "DUPLICATE")
-                        ]
+                        audit_tree[lecture_name] = [(lecture_name, "DUPLICATE")]
 
                         continue
 
                     seen_hashes.add(content_hash)
-                    
+
                 data = {
                     "course": selected_course_name,
                     "module": module_list[selected_module][1],
-
                     "lecture": lecture_name,
                     "sublecture": None,
-                    
                     "lecture_id": (
-                        selected_course_name
-                            .upper()
-                            .replace(" ", "_")
+                        selected_course_name.upper().replace(" ", "_")
                         + "__"
-                        + lecture_name.split(" ")[0]
-                            .replace(".", "_")
+                        + lecture_name.split(" ")[0].replace(".", "_")
                     ),
-                    
                     "type": lecture_record["type"],
-
                     "status": (
                         "SUCCESS"
                         if len(main_content.strip()) >= 100
                         and transcript_expected(main_type)
-
-                        else "NON_TRANSCRIPT"
-                        if not transcript_expected(main_type)
-
-                        else "EMPTY"
+                        else (
+                            "NON_TRANSCRIPT"
+                            if not transcript_expected(main_type)
+                            else "EMPTY"
+                        )
                     ),
-                    
                     "vectorizable": (
                         len(main_content.strip()) >= 100
                         and transcript_expected(main_type)
                     ),
-
                     "content_length": lecture_record["content_length"],
                     "has_transcript": lecture_record["has_transcript"],
-
                     "source_url": page.url,
                     "extracted_at": datetime.now().isoformat(),
                     "content_hash": content_hash,
-
                     "content": main_content,
                 }
 
@@ -1203,23 +1197,21 @@ def run():
                     json.dump(data, f, indent=4, ensure_ascii=False)
 
                 print(f"💾 Saved MAIN JSON: {file_path}")
-                
+
                 preview = main_content[:100].replace("\n", " ")
 
                 print(f"📝 Preview: {preview}")
-                
+
                 if len(main_content.strip()) >= 100:
 
                     if lecture_name not in lecture_status:
 
                         lecture_status[lecture_name] = "SUCCESS"
 
-                        audit_tree[lecture_name] = [
-                            (lecture_name, "SUCCESS")
-                        ]
-                    
-        # lecture loop ends here                    
-                            
+                        audit_tree[lecture_name] = [(lecture_name, "SUCCESS")]
+
+        # lecture loop ends here
+
         # =============================
         # 🔥 FINAL VERIFICATION REPORT
         # =============================
@@ -1243,7 +1235,7 @@ def run():
 
             elif status == "NON_TRANSCRIPT":
                 non_transcript.append(lec)
-                
+
             elif status == "DUPLICATE":
                 duplicates.append(lec)
 
@@ -1268,95 +1260,70 @@ def run():
 
             if not child_found:
                 missing_lectures.append(lec)
-        
-        timestamp = datetime.now().strftime(
-            "%Y-%m-%d_%H-%M-%S"
-        )
 
-        safe_course = (
-            selected_course_name
-                .replace(" ", "_")
-                .replace("&", "and")
-        )
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+        safe_course = selected_course_name.replace(" ", "_").replace("&", "and")
 
         safe_module = (
             module_list[selected_module][1]
-                .replace(" ", "_")
-                .replace(":", "")
-                .replace("&", "and")
-                .replace("|", "")
-                .replace("/", "")
-                .replace("\\", "")
-                .replace("?", "")
-                .replace("*", "")
-                .replace("<", "")
-                .replace(">", "")
+            .replace(" ", "_")
+            .replace(":", "")
+            .replace("&", "and")
+            .replace("|", "")
+            .replace("/", "")
+            .replace("\\", "")
+            .replace("?", "")
+            .replace("*", "")
+            .replace("<", "")
+            .replace(">", "")
         )
 
-        log_folder = os.path.join(
-            "logs",
-            safe_course,
-            safe_module
-        )
+        log_folder = os.path.join("logs", safe_course, safe_module)
 
-        os.makedirs(
-            log_folder,
-            exist_ok=True
-        )
-        
+        os.makedirs(log_folder, exist_ok=True)
+
         tree_json = {
             "course": selected_course_name,
             "module": module_list[selected_module][1],
             "generated_at": datetime.now().isoformat(),
-            "lectures": []
+            "lectures": [],
         }
 
         for parent, children in audit_tree.items():
 
-            lecture_entry = {
-                "parent": parent,
-                "children": []
-            }
+            lecture_entry = {"parent": parent, "children": []}
 
             for child_name, child_status in children:
 
-                lecture_entry["children"].append({
-                    "title": child_name,
-                    "status": child_status
-                })
+                lecture_entry["children"].append(
+                    {"title": child_name, "status": child_status}
+                )
 
-            tree_json["lectures"].append(
-                lecture_entry
-            )
-        
+            tree_json["lectures"].append(lecture_entry)
+
         print("\n========================")
         print("🌳 FULL EXTRACTION TREE")
         print("========================")
-        
+
         tree_json = {
             "course": selected_course_name,
             "module": module_list[selected_module][1],
             "generated_at": datetime.now().isoformat(),
-            "lectures": []
+            "lectures": [],
         }
 
         for parent, children in audit_tree.items():
 
-            lecture_entry = {
-                "parent": parent,
-                "children": []
-            }
+            lecture_entry = {"parent": parent, "children": []}
 
             for child_name, child_status in children:
 
-                lecture_entry["children"].append({
-                    "title": child_name,
-                    "status": child_status
-                })
+                lecture_entry["children"].append(
+                    {"title": child_name, "status": child_status}
+                )
 
-            tree_json["lectures"].append(
-                lecture_entry
-            )
+            tree_json["lectures"].append(lecture_entry)
 
         for parent, children in audit_tree.items():
 
@@ -1397,7 +1364,7 @@ def run():
         print("⚠️ Empty/Unexpected:", len(empty))
         print("❌ Missing:", len(missing_lectures))
         print("🚨 Failed Operations:", len(failed_lectures))
-        
+
         print("\n========================")
         print("📈 INGESTION ANALYTICS")
         print("========================")
@@ -1422,19 +1389,11 @@ def run():
         else:
 
             print("⚠️ No content lengths recorded")
-        
-        with open(
-            "logs/extraction_tree.json",
-            "w",
-            encoding="utf-8"
-        ) as f:
 
-            json.dump(
-                tree_json,
-                f,
-                indent=4
-            )
-        
+        with open("logs/extraction_tree.json", "w", encoding="utf-8") as f:
+
+            json.dump(tree_json, f, indent=4)
+
         report_data = {
             "successful": successful,
             "skipped": skipped,
@@ -1443,89 +1402,46 @@ def run():
             "duplicates": duplicates,
             "missing": missing_lectures,
             "failed_operations": failed_lectures,
-            "generated_at": datetime.now().isoformat()
+            "generated_at": datetime.now().isoformat(),
         }
-        
-        analytics_data = {
 
+        analytics_data = {
             "average_content_length": (
                 sum(content_lengths) // len(content_lengths)
-                if len(content_lengths) > 0 else 0
+                if len(content_lengths) > 0
+                else 0
             ),
-
             "largest_lecture": (
-                max(content_lengths)
-                if len(content_lengths) > 0 else 0
+                max(content_lengths) if len(content_lengths) > 0 else 0
             ),
-
             "smallest_lecture": (
-                min(content_lengths)
-                if len(content_lengths) > 0 else 0
+                min(content_lengths) if len(content_lengths) > 0 else 0
             ),
-
-            "lectures_below_5k": len(
-                [x for x in content_lengths if x < 5000]
-            ),
-
-            "lectures_above_250k": len(
-                [x for x in content_lengths if x > 250000]
-            ),
-
+            "lectures_below_5k": len([x for x in content_lengths if x < 5000]),
+            "lectures_above_250k": len([x for x in content_lengths if x > 250000]),
             "total_lectures_analyzed": len(content_lengths),
-
-            "generated_at": datetime.now().isoformat()
+            "generated_at": datetime.now().isoformat(),
         }
-        
-        report_path = os.path.join(
-            log_folder,
-            f"extraction_report_{timestamp}.json"
-        )
 
-        with open(
-            report_path,
-            "w",
-            encoding="utf-8"
-        ) as f:
+        report_path = os.path.join(log_folder, f"extraction_report_{timestamp}.json")
 
-            json.dump(
-                report_data,
-                f,
-                indent=4
-            )
+        with open(report_path, "w", encoding="utf-8") as f:
 
-        tree_path = os.path.join(
-            log_folder,
-            f"extraction_tree_{timestamp}.json"
-        )
-        
+            json.dump(report_data, f, indent=4)
+
+        tree_path = os.path.join(log_folder, f"extraction_tree_{timestamp}.json")
+
         analytics_path = os.path.join(
-            log_folder,
-            f"ingestion_analytics_{timestamp}.json"
+            log_folder, f"ingestion_analytics_{timestamp}.json"
         )
 
-        with open(
-            tree_path,
-            "w",
-            encoding="utf-8"
-        ) as f:
+        with open(tree_path, "w", encoding="utf-8") as f:
 
-            json.dump(
-                tree_json,
-                f,
-                indent=4
-            )
+            json.dump(tree_json, f, indent=4)
 
-        with open(
-            analytics_path,
-            "w",
-            encoding="utf-8"
-        ) as f:
+        with open(analytics_path, "w", encoding="utf-8") as f:
 
-            json.dump(
-                analytics_data,
-                f,
-                indent=4
-            )
+            json.dump(analytics_data, f, indent=4)
 
         print(f"\n📝 Extraction tree saved:")
         print(tree_path)
@@ -1535,13 +1451,14 @@ def run():
 
         print(f"\n📈 Ingestion analytics saved:")
         print(analytics_path)
-        
+
         if len(failed_lectures) > 0:
 
             print("\n🚨 FAILURE DETAILS:")
             for fail in failed_lectures:
 
                 print(f"   → {fail['lecture']} | {fail['reason']}")
+
 
 run()
 input("Press Enter to close...")

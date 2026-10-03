@@ -1,0 +1,862 @@
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> py rag.py
+
+🧠 Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 3246.93it/s]
+🗄️ Connecting to Chroma...
+✅ RAG Ready
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): 4
+Invalid term. Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 1
+
+Modules:
+  1. Module 1: Fundamentals of Digital Marketing
+  2. Module 2: Customer Experience in Digital Marketing
+  3. Module 3: Digital Outbound Marketing
+  4. Module 4: Digital Inbound Marketing
+  5. Module 5: Leveraging Social Media
+  6. Module 6: Customer Insights & Co-creation
+  7. Module 7: Digital Marketing for Business Markets
+  8. Module 8: Digital Marketing Analytics
+  0. All modules
+Select module number: 5
+
+Ask a question (/bye to quit): What should be the business strategy in the age of platform and networks?
+
+
+Top Retrieval Results:
+
+1. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4_1 | Distance: 0.7337
+2. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4 | Distance: 0.7337
+3. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_2 | Distance: 0.7502
+4. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_1 | Distance: 0.7565
+5. 5.6 Measuring ROI on social media campaigns | DIGITAL_MARKETING_STRATEGY__5_6_1 | Distance: 0.779
+6. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_2 | Distance: 0.7819
+7. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_1 | Distance: 0.789
+8. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.7915
+9. 5.3 Understanding Human Behaviour and Influence in Social Media | DIGITAL_MARKETING_STRATEGY__5_3 | Distance: 0.8046
+10. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.8136
+
+📚 Best Lecture: DIGITAL_MARKETING_STRATEGY__5_11
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+In the age of platform and networks, a business strategy for a small company should focus on a solid foundation built on clear product or service benefits and deep customer insights. Here are the key steps and principles that should be considered:
+
+1. **Clarify Product or Service Benefits**: Start by defining what your product or service can actually deliver to the consumer. This is fundamental and needs to be clear, precise, and focused on the benefit to the customer. Avoid hyperbole; instead, focus on the benefits that differentiate your product from competitors.
+
+2. **Direct Interaction with Customers**: Conduct direct interaction with your target customers. This means physically meeting them rather than relying on surveys. Startups often skip this crucial step. Understanding what your customers truly want and need is vital for a successful strategy.
+
+3. **Competitive Analysis**: Identify your competitors and understand where you stand in relation to them. This includes considering direct competitors as well as substitutes and alternatives. Regularly tracking competition is crucial.
+
+4. **Differentiation**: Clearly differentiate your product or service from competitors. Whether it's creating something unique,offering a better benefit, or providing a service that others can’t or won’t. This differentiation forms the basis for your brand strategy, communication, and media strategies.
+
+5. **Customer Insights**: Leverage customer insights to position your brand uniquely. Understanding how human behavior differs from that of machines, especially regarding purchasing decisions, is crucial. Customer insights can be enhanced with data from AI and ML, but human interaction remains essential.
+
+6. **Examples and Models**: Look at successful companies for inspiration. Examples include Amazon, Flipkart, Myntra, Nykaa, andSwiggy/Zomato. These companies have built their strategies on robust customer insights and have adapted to changing customer behaviors, making them receptive to new trends and technologies.
+
+By adhering to these principles, a small company can build a robust business strategy in the digital age, leveraging platforms and network opportunities effectively.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 1
+   Distance: Expanded
+
+2. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 2
+   Distance: Expanded
+
+3. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 3
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What should be the business strategy in the age of platform and networks?
+Chunks Retrieved: 1
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 12668 chars
+Response Time: 157.41s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 2
+
+Modules:
+  1. Module 1: Understanding Operations
+  2. Module 2: Productivity Management and Project Management
+  3. Module 3: Supply Chain Basics and Inventory Analytics
+  4. Module 4: Assuring Quality in Operations
+  0. All modules
+Select module number: 2
+
+Ask a question (/bye to quit): what are the two main pillars of lean enterprise?
+
+
+Top Retrieval Results:
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.6415
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_4 | Distance: 0.7069
+3. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_10 | Distance: 0.7317
+4. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_8 | Distance: 0.7677
+5. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_8 | Distance: 0.7993
+6. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_6 | Distance: 0.8106
+7. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_5 | Distance: 0.8186
+8. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_2 | Distance: 0.8202
+9. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.8208
+10. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_7 | Distance: 0.8404
+
+📚 Best Lecture: OPERATIONS_MANAGEMENT__2_2_6
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+The two main pillars of lean enterprise, as outlined in the transcript, are Just In Time (JIT) and Total Quality Management (TQM). These two pillars are integral aspects of any lean management program. Let's break down each concept:
+
+1. **Just In Time (JIT)**: JIT is a manufacturing strategy aimed at eliminating waste by producing goods only as they are needed. The core idea is to have the right quantity of the right product, at the right time, and in the right place, thereby reducinginventory costs and improving operational efficiency. The JIT system is metaphorically illustrated by a water flow system, where the "ship" represents the daily operations of a manufacturing or service system, and "rocky structures" represent problems such as defective materials, machine breakdowns, and other bottlenecks. The two options to address these problems are either to "pour water" (increase inventory) or "chisel the rock" (remove the problem). In a lean enterprise, the focus is on chiseling the rock, i.e., eliminating problems, rather than increasing inventory.
+
+2. **Total Quality Management (TQM)**: TQM is a management approach that focuses on achieving and sustaining the highest levelsof quality in all aspects of an organization. It emphasizes continuous improvement and a commitment to high-quality products and services. TQM involves systematic and sustainable problem-solving to ensure that the quality requirements are met. It includesprocesses for customer feedback, process improvement, and personnel development. TQM is considered the second pillar, alongsideJIT, because together they create a comprehensive waste elimination framework. 
+
+In summary, JIT and TQM are the two main pillars of lean enterprise, with JIT addressing waste through problem-solving and TQM addressing quality and continuous improvement. Together, they form a waste elimination framework that helps organizations operate more efficiently and effectively.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 1
+   Distance: Expanded
+
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 2
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: what are the two main pillars of lean enterprise?
+Chunks Retrieved: 1
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 6955 chars
+Response Time: 88.95s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 6
+
+Select module number: 2
+
+Ask a question (/bye to quit): What were the aims of communism?
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+The aims of communism, according to Marx, involve several key measures to fundamentally change society. These measures include:
+
+1. Implementing a heavy progressive income tax to redistribute wealth.
+2. Abolishing inheritance and inheritance taxes to prevent wealth concentration.
+3. Providing free public education to ensure all have access to knowledge and skills.
+4. Ending child labor to protect the rights of children.
+5. Centralizing credit, transportation, and factories under state control via nationalized banks and industries.
+6. Achieving an equitable distribution of the population across rural and urban areas.
+7. Establishing state control over key sectors to prevent concentration of capital in the hands of the few.
+
+Marx believed that these measures would bring about an ideal society, or communism, where the economic foundation (mode of production) would determine the superstructure (culture, law, education, etc.), leading to a more equitable society.
+
+Key concepts Marx highlighted were the idea of "base" (economic foundation) and "superstructure" (everything built on top of it). These concepts show how changes in material conditions lead to changes in society's value systems and institutions. Marx's historical materialism argues that societies evolve through a sequence of economic systems—primitive, slave, feudal, and capitalist—until they reach communism as an ideal society.
+
+By applying these concepts to our own history and future, we can better understand the evolution of social structures and the potential impacts of technological advancements like AI and robotics.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 1
+   Distance: Expanded
+
+2. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 2
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What were the aims of communism?
+Chunks Retrieved: 1
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 11015 chars
+Response Time: 114.72s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): /bye
+
+👋 Goodbye
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> py rag.py
+
+🧠 Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 8195.14it/s]
+🗄️ Connecting to Chroma...
+✅ RAG Ready
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 6
+
+Modules:
+  1. Module 1: Introduction and Pre-cursors - Human in Society
+  2. Module 2: In Search of a Universal Theory
+  3. Module 3: In search of a Universal Theory - Contemporary
+  4. Module 4: Reproduction of Power in Society
+  0. All modules
+Select module number: 2
+
+Ask a question (/bye to quit): What were the aims of communism?
+
+
+Top Retrieval Results:
+
+1. 2.4 Aims of Communism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4 | Distance: 0.6024
+2. 2.3 The Downfall of Capitalism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_3 | Distance: 0.7911
+3. 2.2 Manifesto of the Communist Party, 1848 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_2 | Distance: 0.7933
+4. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_1 | Distance: 0.8081
+5. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_3 | Distance: 0.8092
+6. 2.3 The Downfall of Capitalism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_3 | Distance: 0.8323
+7. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_2 | Distance: 0.8433
+8. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_1 | Distance: 0.8438
+9. 2.2 Manifesto of the Communist Party, 1848 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_2 | Distance: 0.8449
+10. 2.4 Aims of Communism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4 | Distance: 0.8515
+
+📚 Best Lecture: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+Communism aims to eliminate the capitalist system and create a classless, stateless society where the means of production are owned by the community collectively. The primary aims of communism, as per Marx, include uniting the proletariats (working class)globally to fight against the bourgeoisie (capitalists), abolishing private property, and establishing a classless and stateless society.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 1
+   Distance: Expanded
+
+2. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 2
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What were the aims of communism?
+Chunks Retrieved: 1
+Model: qwen2.5:1.5b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 11015 chars
+Response Time: 34.33s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 2
+
+Modules:
+  1. Module 1: Understanding Operations
+  2. Module 2: Productivity Management and Project Management
+  3. Module 3: Supply Chain Basics and Inventory Analytics
+  4. Module 4: Assuring Quality in Operations
+  0. All modules
+Select module number: 2
+
+Ask a question (/bye to quit): what are the two main pillars of lean enterprise?
+
+
+Top Retrieval Results:
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.6415
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_4 | Distance: 0.7069
+3. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_10 | Distance: 0.7317
+4. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_8 | Distance: 0.7677
+5. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_8 | Distance: 0.7993
+6. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_6 | Distance: 0.8106
+7. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_5 | Distance: 0.8186
+8. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_2 | Distance: 0.8202
+9. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.8208
+10. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_7 | Distance: 0.8404
+
+📚 Best Lecture: OPERATIONS_MANAGEMENT__2_2_6
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+In lean enterprise, the two main pillars are Just-In-Time (JIT) and Total Quality Management (TQM).
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 1
+   Distance: Expanded
+
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 2
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: what are the two main pillars of lean enterprise?
+Chunks Retrieved: 1
+Model: qwen2.5:1.5b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 6955 chars
+Response Time: 15.16s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 1
+
+Modules:
+  1. Module 1: Fundamentals of Digital Marketing
+  2. Module 2: Customer Experience in Digital Marketing
+  3. Module 3: Digital Outbound Marketing
+  4. Module 4: Digital Inbound Marketing
+  5. Module 5: Leveraging Social Media
+  6. Module 6: Customer Insights & Co-creation
+  7. Module 7: Digital Marketing for Business Markets
+  8. Module 8: Digital Marketing Analytics
+  0. All modules
+Select module number: 5
+
+Ask a question (/bye to quit): What should be the business strategy in the age of platform and networks?
+
+
+Top Retrieval Results:
+
+1. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4_1 | Distance: 0.7337
+2. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4 | Distance: 0.7337
+3. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_2 | Distance: 0.7502
+4. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_1 | Distance: 0.7565
+5. 5.6 Measuring ROI on social media campaigns | DIGITAL_MARKETING_STRATEGY__5_6_1 | Distance: 0.779
+6. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_2 | Distance: 0.7819
+7. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_1 | Distance: 0.789
+8. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.7915
+9. 5.3 Understanding Human Behaviour and Influence in Social Media | DIGITAL_MARKETING_STRATEGY__5_3 | Distance: 0.8046
+10. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.8136
+
+📚 Best Lecture: DIGITAL_MARKETING_STRATEGY__5_11
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+In the age of platforms and networks, businesses need to adopt a strategic approach that goes beyond just digital marketing. A strong business strategy is essential, and it should start with clearly defining the product or service offered. The product should be defined in terms of its benefits to the customer, not just features, technology, or price. This foundational understanding helps differentiate the product from competitors.
+
+Next, the target customers should be identified, and direct communication with them is crucial. This involves visiting customers in their environments to understand their needs and wants, which is not achieved through online surveys. It is essential to have a deep understanding of the competition to differentiate the product.
+
+To further position the product and strengthen the brand, the communication strategy must involve engaging with the customer asa human being, considering their motivations and behaviors. This includes leveraging insights from consumer behavior research to make the product appeal to a specific audience and address their specific needs.
+
+The media strategy should align with the communication plan, utilizing platforms like Instagram and Facebook to showcase the product. This can help build a strong brand presence and attract a following.
+
+For companies that are not startups, similar principles apply. Companies can leverage their existing database, customer insights, and media channels to create a strong brand image. Successful brands in the startup space, like Amazon and Zomato, have utilized strong consumer insights and a well-rounded media strategy to build their businesses.
+
+In summary, a business strategy in the age of platforms and networks should focus on product definition, customer identification, direct communication, competition differentiation, and customer engagement. This approach helps build a strong brand and position the company competitively in a crowded marketplace.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 1
+   Distance: Expanded
+
+2. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 2
+   Distance: Expanded
+
+3. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 3
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What should be the business strategy in the age of platform and networks?
+Chunks Retrieved: 1
+Model: qwen2.5:1.5b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 12668 chars
+Response Time: 55.91s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): /bye
+
+👋 Goodbye
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> 
+
+Hola Amigo
+
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> py rag.py
+
+🧠 Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 3243.33it/s]
+🗄️ Connecting to Chroma...
+✅ RAG Ready
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 1
+
+Modules:
+  1. Module 1: Fundamentals of Digital Marketing
+  2. Module 2: Customer Experience in Digital Marketing
+  3. Module 3: Digital Outbound Marketing
+  4. Module 4: Digital Inbound Marketing
+  5. Module 5: Leveraging Social Media
+  6. Module 6: Customer Insights & Co-creation
+  7. Module 7: Digital Marketing for Business Markets
+  8. Module 8: Digital Marketing Analytics
+  0. All modules
+Select module number: 5
+
+Ask a question (/bye to quit): What should be the business strategy in the age of platform and networks?
+
+
+Top Retrieval Results:
+
+1. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4_1 | Distance: 0.7337
+2. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4 | Distance: 0.7337
+3. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_2 | Distance: 0.7502
+4. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_1 | Distance: 0.7565
+5. 5.6 Measuring ROI on social media campaigns | DIGITAL_MARKETING_STRATEGY__5_6_1 | Distance: 0.779
+6. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_2 | Distance: 0.7819
+7. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_1 | Distance: 0.789
+8. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.7915
+9. 5.3 Understanding Human Behaviour and Influence in Social Media | DIGITAL_MARKETING_STRATEGY__5_3 | Distance: 0.8046
+10. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.8136
+
+📚 Best Lecture: DIGITAL_MARKETING_STRATEGY__5_11
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+It sounds like you've provided a comprehensive overview of social media marketing strategies and the importance of leveraging social media effectively. Here are some key takeaways and a summary of the discussion:
+
+### Focus on Customer's Decision Journey
+1. **Digital Marketing Communication Framework**:
+   - **Outbound**: Traditional advertising methods.
+   - **Inbound**: Pulling customers towards your brand through content.
+   - **Social Media**: Leveraging mobile technologies, especially smartphones, and a consolidation of platforms into a few key players like Meta (Facebook, Instagram, WhatsApp).
+   
+2. **Consolidation in Social Media**:
+   - **Primary Platforms**: Meta (Facebook, Instagram, WhatsApp)
+   - **Micro Blogs**: Twitter
+   - **Media and File Sharing**: YouTube, Flickr
+   - **Wikis**: Wikipedia
+   - **Discussion Forums**: Forums
+   - **Blogs**
+   - **Social Gaming**: Zynga
+   - **Social Commerce**: Platforms for buying and sharing shopping tips (e.g., Threadless, Levi's Friend Store)
+   - **Review Sites**: Yelp (initially for restaurants, now broader categories)
+   - **Monitoring Tools**: Tools like Trustpilot, InsightRadian
+
+### Social Media Advertising Strategies
+1. **Retargeting for D2C and E-commerce**:
+   - **Geo-Targeting**: Use geofencing for specific areas.
+   - **Online Behavior Retargeting**: Use online data to retarget users who have shown interest but haven't converted yet.
+   - **Brand Communities**: Create a community that engages with customers, fostering loyalty and customer advocacy.
+
+2. **Facebook Advertising Placement Options**:
+   - **Placement**: Automatic, Custom, Collection, Carousel, Single Image, Video.
+   - **Build and Budget Control**: Set daily budgets, bid strategies, and target costs.
+   
+3. **Campaign Bid Strategies**:
+   - **Lowest Bid**: Highest returns within budget.
+   - **Cost Cap**: Stay within set cost cap without exceeding it.
+   - **Target Cost**: Focus on results close to set goal.
+
+4. **Optimization and Measurement**:
+   - **Experimental Methods (A/B Testing)**: Test and measure the impact of different ad placements and strategies.
+   - **Observational Methods**:
+     - **Rule-Based Attribution**: Assign credit based on customer behavior (e.g., last click model).
+     - **Statistical Attribution**: Analyze data to determine the most impactful channels.
+     - **Marketing Mix Modeling**: Incorporates all elements of the marketing mix (product, price, promotion, distribution).
+
+### Key Takeaways
+1. **Consolidation of Social Media Platforms**: Focus on Meta for global marketing efforts.
+2. **Multi-Channel Approach**: Leverage various platforms and channels to engage customers.
+3. **Retargeting and Geo-Targeting**: Use these strategies to reach potential customers effectively.
+4. **Strategic Advertising Placement**: Utilize Facebook's placement options and budget management features.
+5. **Attribution Models**: Implement methods to measure the effectiveness of marketing campaigns.
+
+By understanding and implementing these strategies, brands can better engage their audience across social media platforms, creating meaningful connections and driving conversions.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 5.4 Social Media Advantage for Business
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_4_1
+   Chunk: 1
+   Distance: 0.7337
+
+2. 5.4 Social Media Advantage for Business
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_4
+   Chunk: 1
+   Distance: 0.7337
+
+3. 5.2 Leveraging social media for open innovation
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_2_2
+   Chunk: 2
+   Distance: 0.7502
+
+4. 5.2 Leveraging social media for open innovation
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_2_1
+   Chunk: 1
+   Distance: 0.7565
+
+5. 5.6 Measuring ROI on social media campaigns
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_6_1
+   Chunk: 2
+   Distance: 0.779
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What should be the business strategy in the age of platform and networks?
+Chunks Retrieved: 5
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 28905 chars
+Response Time: 120.09s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 6
+
+Modules:
+  1. Module 1: Introduction and Pre-cursors - Human in Society
+  2. Module 2: In Search of a Universal Theory
+  3. Module 3: In search of a Universal Theory - Contemporary
+  4. Module 4: Reproduction of Power in Society
+  0. All modules
+Select module number: 2
+
+Ask a question (/bye to quit): What were the aims of communism?
+
+
+Top Retrieval Results:
+
+1. 2.4 Aims of Communism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4 | Distance: 0.6024
+2. 2.3 The Downfall of Capitalism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_3 | Distance: 0.7911
+3. 2.2 Manifesto of the Communist Party, 1848 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_2 | Distance: 0.7933
+4. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_1 | Distance: 0.8081
+5. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_3 | Distance: 0.8092
+6. 2.3 The Downfall of Capitalism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_3 | Distance: 0.8323
+7. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_2 | Distance: 0.8433
+8. 2.1 Economic and Philosophic Manuscripts of 1844 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_1 | Distance: 0.8438
+9. 2.2 Manifesto of the Communist Party, 1848 | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_2 | Distance: 0.8449
+10. 2.4 Aims of Communism | EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4 | Distance: 0.8515
+
+📚 Best Lecture: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+Thank you for the detailed context and analysis of Karl Marx's economic and political manuscripts. Your critique and analysis of Marx's ideas are quite insightful, and I appreciate your attempt to separate Marx's theoretical contributions from the ideological debate around communism. Here are some key takeaways and reflections that could be relevant for a social theorist like yourself:
+
+### Key Takeaways:
+
+1. **Concept of Alienation**:
+   - Marx's concept of alienation is still highly relevant. It addresses how modern societies, especially in industrialized contexts, can lead to a disconnection between workers and their labor, products, and even their own species-being (human nature). This can manifest in various forms such as:
+     - **Objectification of Workers**: Workers are treated as commodities, reducing their human dignity and value.
+     - **Loss of Control**: Workers often feel a loss of control over their work, leading to feelings of alienation.
+     - **Loss of Meaning**: The work itself can lose meaning, especially when it becomes a means of survival rather than a source of fulfillment.
+     - **Isolation**: Workers can become isolated from both the products of their labor and their fellow workers.
+
+2. **Capitalist Dynamics**:
+   - Marx's observation that workers become poorer despite producing more highlights the fundamental contradiction in capitalist systems. This dynamic can be seen in various forms:
+     - **Income Inequality**: Workers may earn less compared to the wealth generated by their labor.
+     - **Precarity and Poverty**: Even in wealthy societies, many workers experience poverty and precarity, as seen in your examples of workers at Amazon and in India.
+     - **Extraneous Wealth**: Wealth and power often concentrate in the hands of a few, while the majority of workers struggle.
+
+3. **Social Peace and Inequality**:
+   - The concept of why the poor do not often resort to violence against the rich is a thought-provoking line of inquiry. It encourages reflection on the role of institutions, social norms, and individual choices in maintaining social order, even in the face of significant inequality.
+   - The negative impacts of inequality (e.g., dampened growth, poor health and educational outcomes) also reinforce the relevance of Marx's concerns. Understanding these dynamics can help inform policy and social interventions aimed at reducing inequality.
+
+### Personal Reflections:
+
+- **Resonance of Marx's Ideas**:
+  - The issues of alienation and the negative impacts of inequality resonate with many contemporary social problems, such as climate change, economic instability, and the erosion of community support systems.
+  - It's crucial to acknowledge how Marx's insights can inform discussions on modern social issues, even if one does not necessarily endorse his particular solutions.
+  
+- **Response to Marx's Challenges**:
+  - While the specific solutions may differ, one can argue that Marx's critiques highlight the importance of ensuring that the benefits of economic growth and productivity are distributed more equitably.
+  - Policies focused on reducing inequality, improving worker rights, and ensuring a more humane work environment can be seen as direct responses to Marx's concerns.
+  
+- **Intersectionality and Modern Context**:
+  - Marx's work often lacks a nuanced understanding of intersectionality, where different forms of oppression (e.g., gender, race, and class) interact. Modern social theorists often advocate for a more comprehensive approach that considers multiple axes of discrimination.
+  
+- **Practical Applications**:
+  - Understanding Marx's concepts can inform strategies for fostering more inclusive and equitable societies. For instance, policies that support worker rights, ensure living wages, and promote community-based initiatives can help mitigate some of the issues Marx identified.
+
+### Conclusion:
+
+Marx's ideas about alienation, inequality, and the structural challenges faced by workers remain pertinent in today's world. His critiques provide a framework for understanding and addressing contemporary social issues. While the specifics of his solutions might be debated, the fundamental concerns about the relationship between labor, power, and social well-being remain relevant. Engaging with Marx's work in this way can offer valuable insights for modern social theorists aiming to understand and improve social structures and systems.
+
+I hope these reflections provide a useful starting point for further exploration. If you have any specific areas of interest or questions, feel free to ask!
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 1
+   Distance: 0.6024
+
+2. 2.3 The Downfall of Capitalism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_3
+   Chunk: 2
+   Distance: 0.7911
+
+3. 2.2 Manifesto of the Communist Party, 1848
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_2
+   Chunk: 1
+   Distance: 0.7933
+
+4. 2.1 Economic and Philosophic Manuscripts of 1844
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_1
+   Chunk: 1
+   Distance: 0.8081
+
+5. 2.1 Economic and Philosophic Manuscripts of 1844
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_1_3
+   Chunk: 3
+   Distance: 0.8092
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What were the aims of communism?
+Chunks Retrieved: 5
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 25136 chars
+Response Time: 160.81s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 2
+
+Modules:
+  1. Module 1: Understanding Operations
+  2. Module 2: Productivity Management and Project Management
+  3. Module 3: Supply Chain Basics and Inventory Analytics
+  4. Module 4: Assuring Quality in Operations
+  0. All modules
+Select module number: 2
+
+Ask a question (/bye to quit): what are the two main pillars of lean enterprise?
+
+
+Top Retrieval Results:
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.6415
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_4 | Distance: 0.7069
+3. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_10 | Distance: 0.7317
+4. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_8 | Distance: 0.7677
+5. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_8 | Distance: 0.7993
+6. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_6 | Distance: 0.8106
+7. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_5 | Distance: 0.8186
+8. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_2 | Distance: 0.8202
+9. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.8208
+10. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_7 | Distance: 0.8404
+
+📚 Best Lecture: OPERATIONS_MANAGEMENT__2_2_6
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+The journey of productivity improvement, as described, involves looking beyond the immediate shop floor and considering broader aspects like supply chains and organizational culture. These dimensions are crucial because they provide a holistic view of productivity and help identify potential roadblocks. The challenges in implementing lean and productivity improvements can stem from several factors, including gaps between theory and practice, a lack of commitment from top management, difficulties in empowering middle management, and the need for long-term strategic thinking.
+
+To overcome these challenges, organizations can benefit from having a clear, long-term perspective and ensuring that top management leads effectively. Middle management must be empowered and supported in their efforts to drive change. Additionally, fostering a culture that values continuous improvement and recognizing the importance of sustainable, data-driven improvements can facilitate successful implementation.
+
+When it comes to mechanisms for achieving these goals, visual control aids stand out as effective and immediate solutions. These systems provide a clear, data-driven, and continuous view of performance metrics, making them easy for all personnel to understand and engage with. Examples of visual control systems include prominent display boards, lights, and color-coded mechanisms. The key principles are that they are data-driven, employee-centered, and continuous in nature.
+
+In summary, to enhance productivity, organizations should focus on broadening their scope beyond the shop floor, fostering a culture that values continuous improvement and long-term strategy, and utilizing visual control systems as a tool for effective data-driven and employee-centered management.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 2
+   Distance: 0.6415
+
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_4
+   Chunk: 1
+   Distance: 0.7069
+
+3. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_3_10
+   Chunk: 1
+   Distance: 0.7317
+
+4. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_8
+   Chunk: 1
+   Distance: 0.7677
+
+5. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_3_8
+   Chunk: 1
+   Distance: 0.7993
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: what are the two main pillars of lean enterprise?
+Chunks Retrieved: 5
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 18797 chars
+Response Time: 80.52s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): 

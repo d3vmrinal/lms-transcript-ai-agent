@@ -1,0 +1,354 @@
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 1
+
+Select module number: 5
+
+Ask a question (/bye to quit): What should be the business strategy in the age of platform and networks?
+
+
+======================================================================
+
+In the age of platform and networks, a business strategy for a small company should focus on a solid foundation built on clear product or service benefits and deep customer insights. Here are the key steps and principles that should be considered:
+
+1. **Clarify Product or Service Benefits**: Start by defining what your product or service can actually deliver to the consumer. This is fundamental and needs to be clear, precise, and focused on the benefit to the customer. Avoid hyperbole; instead, focus on the benefits that differentiate your product from competitors.
+
+2. **Direct Interaction with Customers**: Conduct direct interaction with your target customers. This means physically meeting them rather than relying on surveys. Startups often skip this crucial step. Understanding what your customers truly want and need is vital for a successful strategy.
+
+3. **Competitive Analysis**: Identify your competitors and understand where you stand in relation to them. This includes considering direct competitors as well as substitutes and alternatives. Regularly tracking competition is crucial.
+
+4. **Differentiation**: Clearly differentiate your product or service from competitors. Whether it's creating something unique,offering a better benefit, or providing a service that others can’t or won’t. This differentiation forms the basis for your brand strategy, communication, and media strategies.
+
+5. **Customer Insights**: Leverage customer insights to position your brand uniquely. Understanding how human behavior differs from that of machines, especially regarding purchasing decisions, is crucial. Customer insights can be enhanced with data from AI and ML, but human interaction remains essential.
+
+6. **Examples and Models**: Look at successful companies for inspiration. Examples include Amazon, Flipkart, Myntra, Nykaa, andSwiggy/Zomato. These companies have built their strategies on robust customer insights and have adapted to changing customer behaviors, making them receptive to new trends and technologies.
+
+By adhering to these principles, a small company can build a robust business strategy in the digital age, leveraging platforms and network opportunities effectively.
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What should be the business strategy in the age of platform and networks?
+Chunks Retrieved: 1
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 12668 chars
+Response Time: 157.41s
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 2
+
+
+Select module number: 2
+
+Ask a question (/bye to quit): what are the two main pillars of lean enterprise?
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+The two main pillars of lean enterprise, as outlined in the transcript, are Just In Time (JIT) and Total Quality Management (TQM). These two pillars are integral aspects of any lean management program. Let's break down each concept:
+
+1. **Just In Time (JIT)**: JIT is a manufacturing strategy aimed at eliminating waste by producing goods only as they are needed. The core idea is to have the right quantity of the right product, at the right time, and in the right place, thereby reducinginventory costs and improving operational efficiency. The JIT system is metaphorically illustrated by a water flow system, where the "ship" represents the daily operations of a manufacturing or service system, and "rocky structures" represent problems such as defective materials, machine breakdowns, and other bottlenecks. The two options to address these problems are either to "pour water" (increase inventory) or "chisel the rock" (remove the problem). In a lean enterprise, the focus is on chiseling the rock, i.e., eliminating problems, rather than increasing inventory.
+
+2. **Total Quality Management (TQM)**: TQM is a management approach that focuses on achieving and sustaining the highest levelsof quality in all aspects of an organization. It emphasizes continuous improvement and a commitment to high-quality products and services. TQM involves systematic and sustainable problem-solving to ensure that the quality requirements are met. It includesprocesses for customer feedback, process improvement, and personnel development. TQM is considered the second pillar, alongsideJIT, because together they create a comprehensive waste elimination framework. 
+
+In summary, JIT and TQM are the two main pillars of lean enterprise, with JIT addressing waste through problem-solving and TQM addressing quality and continuous improvement. Together, they form a waste elimination framework that helps organizations operate more efficiently and effectively.
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: what are the two main pillars of lean enterprise?
+Chunks Retrieved: 1
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 6955 chars
+Response Time: 88.95s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 6
+
+Select module number: 2
+
+Ask a question (/bye to quit): What were the aims of communism?
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+The aims of communism, according to Marx, involve several key measures to fundamentally change society. These measures include:
+
+1. Implementing a heavy progressive income tax to redistribute wealth.
+2. Abolishing inheritance and inheritance taxes to prevent wealth concentration.
+3. Providing free public education to ensure all have access to knowledge and skills.
+4. Ending child labor to protect the rights of children.
+5. Centralizing credit, transportation, and factories under state control via nationalized banks and industries.
+6. Achieving an equitable distribution of the population across rural and urban areas.
+7. Establishing state control over key sectors to prevent concentration of capital in the hands of the few.
+
+Marx believed that these measures would bring about an ideal society, or communism, where the economic foundation (mode of production) would determine the superstructure (culture, law, education, etc.), leading to a more equitable society.
+
+Key concepts Marx highlighted were the idea of "base" (economic foundation) and "superstructure" (everything built on top of it). These concepts show how changes in material conditions lead to changes in society's value systems and institutions. Marx's historical materialism argues that societies evolve through a sequence of economic systems—primitive, slave, feudal, and capitalist—until they reach communism as an ideal society.
+
+By applying these concepts to our own history and future, we can better understand the evolution of social structures and the potential impacts of technological advancements like AI and robotics.
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What were the aims of communism?
+Chunks Retrieved: 1
+Model: qwen2.5:3b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 11015 chars
+Response Time: 114.72s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): /bye
+
+👋 Goodbye
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> py rag.py
+
+🧠 Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 8195.14it/s]
+🗄️ Connecting to Chroma...
+✅ RAG Ready
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 6
+
+Select module number: 2
+
+Ask a question (/bye to quit): What were the aims of communism?
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+Communism aims to eliminate the capitalist system and create a classless, stateless society where the means of production are owned by the community collectively. The primary aims of communism, as per Marx, include uniting the proletariats (working class)globally to fight against the bourgeoisie (capitalists), abolishing private property, and establishing a classless and stateless society.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 1
+   Distance: Expanded
+
+2. 2.4 Aims of Communism
+   Lecture ID: EXPLORING_SOCIETY_&_SOCIAL_STRUCTURE__2_4
+   Chunk: 2
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What were the aims of communism?
+Chunks Retrieved: 1
+Model: qwen2.5:1.5b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 11015 chars
+Response Time: 34.33s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 2
+
+Modules:
+  1. Module 1: Understanding Operations
+  2. Module 2: Productivity Management and Project Management
+  3. Module 3: Supply Chain Basics and Inventory Analytics
+  4. Module 4: Assuring Quality in Operations
+  0. All modules
+Select module number: 2
+
+Ask a question (/bye to quit): what are the two main pillars of lean enterprise?
+
+
+Top Retrieval Results:
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.6415
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_4 | Distance: 0.7069
+3. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_10 | Distance: 0.7317
+4. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_8 | Distance: 0.7677
+5. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_8 | Distance: 0.7993
+6. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_6 | Distance: 0.8106
+7. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_5 | Distance: 0.8186
+8. 2.3 Tools for Sustaining Productivity Improvements & Challenges in Lean Management (5 Questions) | OPERATIONS_MANAGEMENT__2_3_2 | Distance: 0.8202
+9. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_6 | Distance: 0.8208
+10. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions) | OPERATIONS_MANAGEMENT__2_2_7 | Distance: 0.8404
+
+📚 Best Lecture: OPERATIONS_MANAGEMENT__2_2_6
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+In lean enterprise, the two main pillars are Just-In-Time (JIT) and Total Quality Management (TQM).
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 1
+   Distance: Expanded
+
+2. 2.2 Productivity Management: Philosophy, Tools & Techniques (5 Questions)
+   Lecture ID: OPERATIONS_MANAGEMENT__2_2_6
+   Chunk: 2
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: what are the two main pillars of lean enterprise?
+Chunks Retrieved: 1
+Model: qwen2.5:1.5b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 6955 chars
+Response Time: 15.16s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): term 4
+
+Courses:
+  1. Digital Marketing Strategy
+  2. Operations Management
+  3. New Product Development
+  4. Sustainability Measures for SMEs
+  5. People, Work and Organisations
+  6. Exploring Society & Social Structure
+  7. Introduction to Strategic Management
+  0. All courses in Term 4
+Select course number: 1
+
+Modules:
+  1. Module 1: Fundamentals of Digital Marketing
+  2. Module 2: Customer Experience in Digital Marketing
+  3. Module 3: Digital Outbound Marketing
+  4. Module 4: Digital Inbound Marketing
+  5. Module 5: Leveraging Social Media
+  6. Module 6: Customer Insights & Co-creation
+  7. Module 7: Digital Marketing for Business Markets
+  8. Module 8: Digital Marketing Analytics
+  0. All modules
+Select module number: 5
+
+Ask a question (/bye to quit): What should be the business strategy in the age of platform and networks?
+
+
+Top Retrieval Results:
+
+1. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4_1 | Distance: 0.7337
+2. 5.4 Social Media Advantage for Business | DIGITAL_MARKETING_STRATEGY__5_4 | Distance: 0.7337
+3. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_2 | Distance: 0.7502
+4. 5.2 Leveraging social media for open innovation | DIGITAL_MARKETING_STRATEGY__5_2_1 | Distance: 0.7565
+5. 5.6 Measuring ROI on social media campaigns | DIGITAL_MARKETING_STRATEGY__5_6_1 | Distance: 0.779
+6. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_2 | Distance: 0.7819
+7. 5.5 Integrating Social and Digital Strategy | DIGITAL_MARKETING_STRATEGY__5_5_1 | Distance: 0.789
+8. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.7915
+9. 5.3 Understanding Human Behaviour and Influence in Social Media | DIGITAL_MARKETING_STRATEGY__5_3 | Distance: 0.8046
+10. 5.11 Insights from Malavika Harita | DIGITAL_MARKETING_STRATEGY__5_11 | Distance: 0.8136
+
+📚 Best Lecture: DIGITAL_MARKETING_STRATEGY__5_11
+🤖 Generating answer...
+
+======================================================================
+📚 ANSWER
+======================================================================
+
+In the age of platforms and networks, businesses need to adopt a strategic approach that goes beyond just digital marketing. A strong business strategy is essential, and it should start with clearly defining the product or service offered. The product should be defined in terms of its benefits to the customer, not just features, technology, or price. This foundational understanding helps differentiate the product from competitors.
+
+Next, the target customers should be identified, and direct communication with them is crucial. This involves visiting customers in their environments to understand their needs and wants, which is not achieved through online surveys. It is essential to have a deep understanding of the competition to differentiate the product.
+
+To further position the product and strengthen the brand, the communication strategy must involve engaging with the customer asa human being, considering their motivations and behaviors. This includes leveraging insights from consumer behavior research to make the product appeal to a specific audience and address their specific needs.
+
+The media strategy should align with the communication plan, utilizing platforms like Instagram and Facebook to showcase the product. This can help build a strong brand presence and attract a following.
+
+For companies that are not startups, similar principles apply. Companies can leverage their existing database, customer insights, and media channels to create a strong brand image. Successful brands in the startup space, like Amazon and Zomato, have utilized strong consumer insights and a well-rounded media strategy to build their businesses.
+
+In summary, a business strategy in the age of platforms and networks should focus on product definition, customer identification, direct communication, competition differentiation, and customer engagement. This approach helps build a strong brand and position the company competitively in a crowded marketplace.
+
+======================================================================
+📖 SOURCES
+======================================================================
+
+1. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 1
+   Distance: Expanded
+
+2. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 2
+   Distance: Expanded
+
+3. 5.11 Insights from Malavika Harita
+   Lecture ID: DIGITAL_MARKETING_STRATEGY__5_11
+   Chunk: 3
+   Distance: Expanded
+
+======================================================================
+📊 RAG ANALYTICS
+======================================================================
+Question: What should be the business strategy in the age of platform and networks?
+Chunks Retrieved: 1
+Model: qwen2.5:1.5b
+Embedding Model: BAAI/bge-base-en-v1.5
+Context Size: 12668 chars
+Response Time: 55.91s
+
+Terms: Term 1, Term 2, Term 3, Term 4, Term 5, Term 6
+Select Term (mandatory, or /bye to quit): /bye
+
+👋 Goodbye
+PS C:\Users\dev\OneDrive\Desktop\CSE\LMS-AI-Agent> 

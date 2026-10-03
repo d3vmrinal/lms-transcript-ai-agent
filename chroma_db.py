@@ -5,14 +5,13 @@ from datetime import datetime
 
 import chromadb
 
-
 # ========================
 # CONFIG
 # ========================
 
 EMBEDDINGS_FOLDER = "embeddings"
 
-VECTOR_DB_FOLDER = r"C:\LMS_VectorDB"
+VECTOR_DB_FOLDER = os.getenv("CHROMA_PATH", os.path.expanduser("~/LMS_VectorDB"))
 
 COLLECTION_NAME = "lms_knowledge_base"
 
@@ -32,14 +31,10 @@ if os.path.exists(VECTOR_DB_FOLDER):
 # CREATE CLIENT
 # ========================
 
-client = chromadb.PersistentClient(
-    path=VECTOR_DB_FOLDER
-)
+client = chromadb.PersistentClient(path=VECTOR_DB_FOLDER)
 
 
-collection = client.get_or_create_collection(
-    name=COLLECTION_NAME
-)
+collection = client.get_or_create_collection(name=COLLECTION_NAME)
 
 
 # ========================
@@ -61,9 +56,7 @@ failed_files = []
 # WALK EMBEDDINGS
 # ========================
 
-for root, _, files in os.walk(
-    EMBEDDINGS_FOLDER
-):
+for root, _, files in os.walk(EMBEDDINGS_FOLDER):
 
     for file in files:
 
@@ -71,18 +64,11 @@ for root, _, files in os.walk(
 
             continue
 
-        file_path = os.path.join(
-            root,
-            file
-        )
+        file_path = os.path.join(root, file)
 
         try:
 
-            with open(
-                file_path,
-                "r",
-                encoding="utf-8"
-            ) as f:
+            with open(file_path, "r", encoding="utf-8") as f:
 
                 data = json.load(f)
 
@@ -92,10 +78,7 @@ for root, _, files in os.walk(
 
             lectures_indexed += 1
 
-            chunks = data.get(
-                "chunks",
-                []
-            )
+            chunks = data.get("chunks", [])
 
             ids = []
 
@@ -107,125 +90,43 @@ for root, _, files in os.walk(
 
             for chunk in chunks:
 
-                chunk_id = chunk.get(
-                    "chunk_id"
-                )
+                chunk_id = chunk.get("chunk_id")
 
-                embedding = chunk.get(
-                    "embedding"
-                )
+                embedding = chunk.get("embedding")
 
-                chunk_text = chunk.get(
-                    "chunk_text",
-                    ""
-                )
+                chunk_text = chunk.get("chunk_text", "")
 
                 metadata = {
-
-                    "course_name":
-                    str(
-                        chunk.get(
-                            "course_name",
-                            ""
-                        )
-                    ),
-
-                    "module_name":
-                    str(
-                        chunk.get(
-                            "module_name",
-                            ""
-                        )
-                    ),
-
-                    "lecture_title":
-                    str(
-                        chunk.get(
-                            "lecture_title",
-                            ""
-                        )
-                    ),
-
-                    "lecture_id":
-                    str(
-                        chunk.get(
-                            "lecture_id",
-                            ""
-                        )
-                    ),
-
-                    "chunk_index":
-                    int(
-                        chunk.get(
-                            "chunk_index",
-                            0
-                        )
-                    ),
-
-                    "source_type":
-                    str(
-                        chunk.get(
-                            "source_type",
-                            ""
-                        )
-                    ),
-                    
-                    "chunk_word_count":
-                    int(
-                        chunk.get(
-                            "chunk_word_count",
-                            0
-                        )
-                    )
+                    "course_name": str(chunk.get("course_name", "")),
+                    "module_name": str(chunk.get("module_name", "")),
+                    "lecture_title": str(chunk.get("lecture_title", "")),
+                    "lecture_id": str(chunk.get("lecture_id", "")),
+                    "chunk_index": int(chunk.get("chunk_index", 0)),
+                    "source_type": str(chunk.get("source_type", "")),
+                    "chunk_word_count": int(chunk.get("chunk_word_count", 0)),
                 }
 
-                ids.append(
-                    chunk_id
-                )
+                ids.append(chunk_id)
 
-                embeddings.append(
-                    embedding
-                )
+                embeddings.append(embedding)
 
-                documents.append(
-                    chunk_text
-                )
+                documents.append(chunk_text)
 
-                metadatas.append(
-                    metadata
-                )
+                metadatas.append(metadata)
 
-                courses.add(
-                    metadata[
-                        "course_name"
-                    ]
-                )
+                courses.add(metadata["course_name"])
 
-                modules.add(
-                    metadata[
-                        "module_name"
-                    ]
-                )
+                modules.add(metadata["module_name"])
 
                 chunks_indexed += 1
 
             collection.add(
-                ids=ids,
-                embeddings=embeddings,
-                documents=documents,
-                metadatas=metadatas
+                ids=ids, embeddings=embeddings, documents=documents, metadatas=metadatas
             )
 
         except Exception as e:
 
-            failed_files.append({
-
-                "file":
-                file_path,
-
-                "error":
-                str(e)
-            })
+            failed_files.append({"file": file_path, "error": str(e)})
 
 
 # ========================
@@ -233,49 +134,22 @@ for root, _, files in os.walk(
 # ========================
 
 report_data = {
-
-    "lectures_indexed":
-    lectures_indexed,
-
-    "chunks_indexed":
-    chunks_indexed,
-
-    "courses_found":
-    len(courses),
-
-    "modules_found":
-    len(modules),
-
-    "collection_name":
-    COLLECTION_NAME,
-
-    "embedding_dimension":
-    384,
-
-    "failed_files":
-    failed_files,
-
-    "generated_at":
-    datetime.now().isoformat()
+    "lectures_indexed": lectures_indexed,
+    "chunks_indexed": chunks_indexed,
+    "courses_found": len(courses),
+    "modules_found": len(modules),
+    "collection_name": COLLECTION_NAME,
+    "embedding_dimension": 768,
+    "failed_files": failed_files,
+    "generated_at": datetime.now().isoformat(),
 }
 
 
-report_path = os.path.join(
-    VECTOR_DB_FOLDER,
-    "chroma_report.json"
-)
+report_path = os.path.join(VECTOR_DB_FOLDER, "chroma_report.json")
 
-with open(
-    report_path,
-    "w",
-    encoding="utf-8"
-) as f:
+with open(report_path, "w", encoding="utf-8") as f:
 
-    json.dump(
-        report_data,
-        f,
-        indent=4
-    )
+    json.dump(report_data, f, indent=4)
 
 
 # ========================
@@ -288,35 +162,17 @@ print("========================")
 print("🗄️ CHROMA REPORT")
 print("========================")
 
-print(
-    "📚 Lectures Indexed:",
-    lectures_indexed
-)
+print("📚 Lectures Indexed:", lectures_indexed)
 
-print(
-    "🧩 Chunks Indexed:",
-    chunks_indexed
-)
+print("🧩 Chunks Indexed:", chunks_indexed)
 
-print(
-    "📖 Courses:",
-    len(courses)
-)
+print("📖 Courses:", len(courses))
 
-print(
-    "📦 Modules:",
-    len(modules)
-)
+print("📦 Modules:", len(modules))
 
-print(
-    "🧠 Collection:",
-    COLLECTION_NAME
-)
+print("🧠 Collection:", COLLECTION_NAME)
 
-print(
-    "❌ Failed Files:",
-    len(failed_files)
-)
+print("❌ Failed Files:", len(failed_files))
 
 if failed_files:
 
@@ -326,22 +182,14 @@ if failed_files:
 
     for failure in failed_files:
 
-        print(
-            failure["file"]
-        )
+        print(failure["file"])
 
-        print(
-            failure["error"]
-        )
+        print(failure["error"])
 
         print("-" * 50)
 
 print()
 
-print(
-    "📄 Report saved:"
-)
+print("📄 Report saved:")
 
-print(
-    report_path
-)
+print(report_path)
